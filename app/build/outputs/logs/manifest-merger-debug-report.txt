@@ -1,0 +1,389 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-17:12
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f59d48712ebb7d291da7f7db44f66bec\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\0fef5e054fa07b769173db7c8fe9ec8c\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1ef6839ed5d59e27e0624034910583ef\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\bf60ff721e8916fc064cbe71d57e8140\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\42de472f803303dc2c4886c71920d199\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\54e415839195914847bdb7532e819657\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e23ba565aef1d7021f2336f644ae68ba\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\5c95c27c0559db85241c0094a24ee1a9\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\bacc30adb35cf6072e707f09ea94d477\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\4609bb922ddc055bf6ad2688ffae34a8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\8d23331af63dc0501c8323fbeb4cc8b1\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\8219c3fb556129ce0c62145eb37c7c0d\transformed\navigation-common-2.7.7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\89fb91ec0750ddd1330b1177fee5913b\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4f8ed68bfc071872898f400eee98bbf6\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c1e1a59252ad39d67380380b1fe36cd\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\50a42d5d6baee82c4d15537925e557cd\transformed\navigation-compose-2.7.7\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Fanil\.gradle\caches\8.13\transforms\6127b5f0df28c097a76799eaa0c91772\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e0a87b2882a500404d3ccc90ec8cc25e\transformed\activity-1.9.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e711f0eb1bb7569ffe83ffe2bb8b4ee8\transformed\activity-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\62c7f23f07ed36371e357da91e674ed2\transformed\material3-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\126e29b8f09bc0b4a6ffbe4bad989467\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\2524477380aa3b2eaded2ed82bcb451d\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\549cc2b123edbe97f709c272f4090a59\transformed\material-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\64b0ab6785a6216e5a7cf58a9248a19b\transformed\animation-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4b7fcf0e44021c5ebb8bef961b8a2758\transformed\animation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\80548c7fa9d302a5d61367e60a6719da\transformed\foundation-layout-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c27492f203f4ceb0e3da43618e58dbc\transformed\foundation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\b37198034100e1230a1281a917c30ee0\transformed\ui-tooling-data-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\15024910a977fba2c02c51b5864253c8\transformed\ui-unit-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\66ac2a4dff29dfd2b35eceecc36504d1\transformed\ui-geometry-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\e1cb7fe127cd937ebf1ab1bed1b8b5e5\transformed\ui-util-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\c66c504c3b8e232b29c95c36b05e6bcd\transformed\ui-text-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\b0a641a1ea8ba895eff883048cfebecd\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\69720a6cb1706cdf01040a5aa3f16b55\transformed\ui-tooling-preview-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\070d7213176d886023e0f0dd12956b8e\transformed\ui-tooling-release\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\dfd14a8cb780416e1e31195281c430d4\transformed\activity-compose-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\a7185959583ec738ff892a777ada76a9\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\551c2d81df9e701c47b340f32eeca1f5\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\12acb667ccc375b7143311ef0eb0b340\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\44b1479eaefd39cc0d60077407036186\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\08a2db705190d01141f98ba49dc20933\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\60ef6e6b6cbd23ad4414ff15b075c955\transformed\lifecycle-livedata-core-ktx-2.8.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\96c244f98b8d08da3ba8d95066e14cd1\transformed\lifecycle-livedata-2.8.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\b8a19ecb6b3e25efd1d252f2ac2a70d6\transformed\lifecycle-livedata-core-2.8.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\2ef9c1fe29920d95ba5dcc05694093de\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\d034aea5785c64a9677ba7cb8681da88\transformed\lifecycle-viewmodel-savedstate-2.8.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\e88cd7464476ab7c74ac638c74be6348\transformed\lifecycle-viewmodel-2.8.2\AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\999d654a968451fe352cb8878d3f6683\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\3272376baf545994a5197027020a8318\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\0f1847bbbffc16f6de5b7c184c25d556\transformed\lifecycle-viewmodel-ktx-2.8.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\de98b68d4d97d75b384c99d2881d5bc9\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\9c1b92144baa17600cb4f7847b59badf\transformed\ui-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9030a473404179688f750c39a5102bde\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e5e229f6e22e5bf32c6a712d5577f2f1\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e7cbd5680bc87b6c57dc2b098924a4b3\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a106a5e42b359ae32aaf510ea1415e8c\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\921713a5329485b51c1b271756f37069\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9b8f5f715f2393dc99408af5db37b2de\transformed\core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\2dcefe88d7848889f2ce7034ebcfa090\transformed\runtime-saveable-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\98a772a6e70e2e2e6878e7224b3aa8a9\transformed\runtime-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e9711768662bb0e1a01938a407de5c56\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2601eea268e399c0142c186b0a0ac545\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\15cd11a07da69a67cf452cc3c7adb31c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\f74c07f04efe444b671fa8b17d85de3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\466d26c2e622e38ba810f4a549403d9e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\b2cd5905e4bb3c8fdd3eded47f47ddaf\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fc0f9c4ccfae418ede756fae7b0ab6bb\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\5155c9c8ff19959e6649f1e78f01e09d\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\987dc5bafb4400d198a1de12a18c00da\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a4958d3df19a2556ce4d34468356cd2d\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\097cea4d6abc6936e3917395aef99ccf\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+	package
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:11-40
+		INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:41-99
+application
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:5-15:19
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:5-15:19
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f59d48712ebb7d291da7f7db44f66bec\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f59d48712ebb7d291da7f7db44f66bec\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\0fef5e054fa07b769173db7c8fe9ec8c\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\0fef5e054fa07b769173db7c8fe9ec8c\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\070d7213176d886023e0f0dd12956b8e\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\070d7213176d886023e0f0dd12956b8e\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\f74c07f04efe444b671fa8b17d85de3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\f74c07f04efe444b671fa8b17d85de3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\b2cd5905e4bb3c8fdd3eded47f47ddaf\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\b2cd5905e4bb3c8fdd3eded47f47ddaf\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:5:9-41
+	android:theme
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:6:9-45
+activity#com.example.authapp.MainActivity
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:7:9-14:20
+	android:exported
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:9:13-36
+	android:name
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:8:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:10:13-13:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:11:17-69
+	android:name
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:11:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:12:17-77
+	android:name
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:12:27-74
+uses-sdk
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f59d48712ebb7d291da7f7db44f66bec\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f59d48712ebb7d291da7f7db44f66bec\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\0fef5e054fa07b769173db7c8fe9ec8c\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\0fef5e054fa07b769173db7c8fe9ec8c\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1ef6839ed5d59e27e0624034910583ef\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1ef6839ed5d59e27e0624034910583ef\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\bf60ff721e8916fc064cbe71d57e8140\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\bf60ff721e8916fc064cbe71d57e8140\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\42de472f803303dc2c4886c71920d199\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\42de472f803303dc2c4886c71920d199\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\54e415839195914847bdb7532e819657\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\54e415839195914847bdb7532e819657\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e23ba565aef1d7021f2336f644ae68ba\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e23ba565aef1d7021f2336f644ae68ba\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\5c95c27c0559db85241c0094a24ee1a9\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\5c95c27c0559db85241c0094a24ee1a9\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\bacc30adb35cf6072e707f09ea94d477\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\bacc30adb35cf6072e707f09ea94d477\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\4609bb922ddc055bf6ad2688ffae34a8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\4609bb922ddc055bf6ad2688ffae34a8\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\8d23331af63dc0501c8323fbeb4cc8b1\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\8d23331af63dc0501c8323fbeb4cc8b1\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\8219c3fb556129ce0c62145eb37c7c0d\transformed\navigation-common-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\8219c3fb556129ce0c62145eb37c7c0d\transformed\navigation-common-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\89fb91ec0750ddd1330b1177fee5913b\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\89fb91ec0750ddd1330b1177fee5913b\transformed\navigation-runtime-2.7.7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4f8ed68bfc071872898f400eee98bbf6\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4f8ed68bfc071872898f400eee98bbf6\transformed\navigation-common-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c1e1a59252ad39d67380380b1fe36cd\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c1e1a59252ad39d67380380b1fe36cd\transformed\navigation-runtime-ktx-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\50a42d5d6baee82c4d15537925e557cd\transformed\navigation-compose-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\50a42d5d6baee82c4d15537925e557cd\transformed\navigation-compose-2.7.7\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Fanil\.gradle\caches\8.13\transforms\6127b5f0df28c097a76799eaa0c91772\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Fanil\.gradle\caches\8.13\transforms\6127b5f0df28c097a76799eaa0c91772\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e0a87b2882a500404d3ccc90ec8cc25e\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e0a87b2882a500404d3ccc90ec8cc25e\transformed\activity-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e711f0eb1bb7569ffe83ffe2bb8b4ee8\transformed\activity-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e711f0eb1bb7569ffe83ffe2bb8b4ee8\transformed\activity-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\62c7f23f07ed36371e357da91e674ed2\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\62c7f23f07ed36371e357da91e674ed2\transformed\material3-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\126e29b8f09bc0b4a6ffbe4bad989467\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\126e29b8f09bc0b4a6ffbe4bad989467\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\2524477380aa3b2eaded2ed82bcb451d\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\2524477380aa3b2eaded2ed82bcb451d\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\549cc2b123edbe97f709c272f4090a59\transformed\material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\549cc2b123edbe97f709c272f4090a59\transformed\material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\64b0ab6785a6216e5a7cf58a9248a19b\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\64b0ab6785a6216e5a7cf58a9248a19b\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4b7fcf0e44021c5ebb8bef961b8a2758\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4b7fcf0e44021c5ebb8bef961b8a2758\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\80548c7fa9d302a5d61367e60a6719da\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\80548c7fa9d302a5d61367e60a6719da\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c27492f203f4ceb0e3da43618e58dbc\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c27492f203f4ceb0e3da43618e58dbc\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\b37198034100e1230a1281a917c30ee0\transformed\ui-tooling-data-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\b37198034100e1230a1281a917c30ee0\transformed\ui-tooling-data-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\15024910a977fba2c02c51b5864253c8\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\15024910a977fba2c02c51b5864253c8\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\66ac2a4dff29dfd2b35eceecc36504d1\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\66ac2a4dff29dfd2b35eceecc36504d1\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\e1cb7fe127cd937ebf1ab1bed1b8b5e5\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\e1cb7fe127cd937ebf1ab1bed1b8b5e5\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\c66c504c3b8e232b29c95c36b05e6bcd\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\c66c504c3b8e232b29c95c36b05e6bcd\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\b0a641a1ea8ba895eff883048cfebecd\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\b0a641a1ea8ba895eff883048cfebecd\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\69720a6cb1706cdf01040a5aa3f16b55\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\69720a6cb1706cdf01040a5aa3f16b55\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\070d7213176d886023e0f0dd12956b8e\transformed\ui-tooling-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\070d7213176d886023e0f0dd12956b8e\transformed\ui-tooling-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\dfd14a8cb780416e1e31195281c430d4\transformed\activity-compose-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\dfd14a8cb780416e1e31195281c430d4\transformed\activity-compose-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\a7185959583ec738ff892a777ada76a9\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\a7185959583ec738ff892a777ada76a9\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\551c2d81df9e701c47b340f32eeca1f5\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\551c2d81df9e701c47b340f32eeca1f5\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\12acb667ccc375b7143311ef0eb0b340\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\12acb667ccc375b7143311ef0eb0b340\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\44b1479eaefd39cc0d60077407036186\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\44b1479eaefd39cc0d60077407036186\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\08a2db705190d01141f98ba49dc20933\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\08a2db705190d01141f98ba49dc20933\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\60ef6e6b6cbd23ad4414ff15b075c955\transformed\lifecycle-livedata-core-ktx-2.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\60ef6e6b6cbd23ad4414ff15b075c955\transformed\lifecycle-livedata-core-ktx-2.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\96c244f98b8d08da3ba8d95066e14cd1\transformed\lifecycle-livedata-2.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\96c244f98b8d08da3ba8d95066e14cd1\transformed\lifecycle-livedata-2.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\b8a19ecb6b3e25efd1d252f2ac2a70d6\transformed\lifecycle-livedata-core-2.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\b8a19ecb6b3e25efd1d252f2ac2a70d6\transformed\lifecycle-livedata-core-2.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\2ef9c1fe29920d95ba5dcc05694093de\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\2ef9c1fe29920d95ba5dcc05694093de\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\d034aea5785c64a9677ba7cb8681da88\transformed\lifecycle-viewmodel-savedstate-2.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\d034aea5785c64a9677ba7cb8681da88\transformed\lifecycle-viewmodel-savedstate-2.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\e88cd7464476ab7c74ac638c74be6348\transformed\lifecycle-viewmodel-2.8.2\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\e88cd7464476ab7c74ac638c74be6348\transformed\lifecycle-viewmodel-2.8.2\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\999d654a968451fe352cb8878d3f6683\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\999d654a968451fe352cb8878d3f6683\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\3272376baf545994a5197027020a8318\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\3272376baf545994a5197027020a8318\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\0f1847bbbffc16f6de5b7c184c25d556\transformed\lifecycle-viewmodel-ktx-2.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\0f1847bbbffc16f6de5b7c184c25d556\transformed\lifecycle-viewmodel-ktx-2.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\de98b68d4d97d75b384c99d2881d5bc9\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\de98b68d4d97d75b384c99d2881d5bc9\transformed\lifecycle-viewmodel-compose-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\9c1b92144baa17600cb4f7847b59badf\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\9c1b92144baa17600cb4f7847b59badf\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9030a473404179688f750c39a5102bde\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9030a473404179688f750c39a5102bde\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e5e229f6e22e5bf32c6a712d5577f2f1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e5e229f6e22e5bf32c6a712d5577f2f1\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e7cbd5680bc87b6c57dc2b098924a4b3\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e7cbd5680bc87b6c57dc2b098924a4b3\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a106a5e42b359ae32aaf510ea1415e8c\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a106a5e42b359ae32aaf510ea1415e8c\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\921713a5329485b51c1b271756f37069\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\921713a5329485b51c1b271756f37069\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9b8f5f715f2393dc99408af5db37b2de\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9b8f5f715f2393dc99408af5db37b2de\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\2dcefe88d7848889f2ce7034ebcfa090\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\2dcefe88d7848889f2ce7034ebcfa090\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\98a772a6e70e2e2e6878e7224b3aa8a9\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\98a772a6e70e2e2e6878e7224b3aa8a9\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e9711768662bb0e1a01938a407de5c56\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\e9711768662bb0e1a01938a407de5c56\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2601eea268e399c0142c186b0a0ac545\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2601eea268e399c0142c186b0a0ac545\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\15cd11a07da69a67cf452cc3c7adb31c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\15cd11a07da69a67cf452cc3c7adb31c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\f74c07f04efe444b671fa8b17d85de3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\f74c07f04efe444b671fa8b17d85de3e\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\466d26c2e622e38ba810f4a549403d9e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\466d26c2e622e38ba810f4a549403d9e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\b2cd5905e4bb3c8fdd3eded47f47ddaf\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\b2cd5905e4bb3c8fdd3eded47f47ddaf\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fc0f9c4ccfae418ede756fae7b0ab6bb\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fc0f9c4ccfae418ede756fae7b0ab6bb\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\5155c9c8ff19959e6649f1e78f01e09d\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\5155c9c8ff19959e6649f1e78f01e09d\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\987dc5bafb4400d198a1de12a18c00da\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\987dc5bafb4400d198a1de12a18c00da\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a4958d3df19a2556ce4d34468356cd2d\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a4958d3df19a2556ce4d34468356cd2d\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\097cea4d6abc6936e3917395aef99ccf\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\097cea4d6abc6936e3917395aef99ccf\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\070d7213176d886023e0f0dd12956b8e\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\070d7213176d886023e0f0dd12956b8e\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\070d7213176d886023e0f0dd12956b8e\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\b2cd5905e4bb3c8fdd3eded47f47ddaf\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\b2cd5905e4bb3c8fdd3eded47f47ddaf\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a82e3437ea8e5681e427c84b954e53c2\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\613abd549dabcb6852f786a5f2669a61\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+permission#com.example.authapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+uses-permission#com.example.authapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\1cdd2581ffba25b8c0434ed80a435a8d\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\935c3fce450f72409c0e70c4cde94244\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
