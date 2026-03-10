@@ -1,4 +1,4 @@
-﻿plugins {
+plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
@@ -42,6 +42,8 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.9.0")
 
     implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-text")
+    implementation("androidx.compose.material:material-icons-core")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.ui:ui-tooling-preview")
     debugImplementation("androidx.compose.ui:ui-tooling")
@@ -54,4 +56,5 @@ dependencies {
 
     implementation("com.google.android.material:material:1.12.0")
 }
+
 

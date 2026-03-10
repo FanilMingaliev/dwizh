@@ -1,4 +1,4 @@
-﻿package com.example.authapp.ui.login
+package com.example.authapp.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -39,13 +39,9 @@ class LoginViewModel(
                 onSuccess()
             } else {
                 _uiState.value = _uiState.value.copy(
-                    errorMessage = result.exceptionOrNull()?.message ?: "Ошибка входа"
+                    errorMessage = result.exceptionOrNull()?.message ?: "Login failed"
                 )
             }
         }
-    }
-
-    fun clearSession() {
-        _uiState.value = LoginUiState()
     }
 }

@@ -1,0 +1,107 @@
+package com.example.authapp.ui.profile
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.KeyboardArrowRight
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Icon
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+
+@Composable
+fun FactsListScreen(
+    onSelectFact: (Int) -> Unit,
+    onClose: () -> Unit
+) {
+    val buttonColor = Color(0xFF2F80ED)
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0x80000000)),
+        contentAlignment = Alignment.BottomCenter
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(Color.White, RoundedCornerShape(topStart = 20.dp, topEnd = 20.dp))
+                .padding(16.dp),
+            verticalArrangement = Arrangement.Top
+        ) {
+            Box(
+                modifier = Modifier
+                    .align(Alignment.CenterHorizontally)
+                    .height(4.dp)
+                    .fillMaxWidth(0.2f)
+                    .background(Color(0xFFD1D8E2), RoundedCornerShape(2.dp))
+            )
+            Spacer(modifier = Modifier.height(12.dp))
+            Text(text = "Факты обо мне")
+            Spacer(modifier = Modifier.height(8.dp))
+            repeat(5) { index ->
+                FactRowItem(
+                    text = "${index + 1} факт",
+                    onClick = { onSelectFact(index) }
+                )
+            }
+            Spacer(modifier = Modifier.height(12.dp))
+            Button(
+                onClick = onClose,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(48.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = buttonColor,
+                    contentColor = Color.White
+                ),
+                shape = RoundedCornerShape(24.dp)
+            ) {
+                Text("Продолжить", fontSize = 14.sp)
+            }
+        }
+    }
+}
+
+@Composable
+private fun FactRowItem(text: String, onClick: () -> Unit) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 4.dp)
+            .background(Color(0xFFF6F8FB), RoundedCornerShape(14.dp))
+            .clickable { onClick() }
+            .padding(horizontal = 12.dp, vertical = 12.dp)
+    ) {
+        Column {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(text = text, color = Color(0xFF1F2A3A))
+                Icon(
+                    imageVector = Icons.Default.KeyboardArrowRight,
+                    contentDescription = null,
+                    tint = Color(0xFF8A97A7)
+                )
+            }
+        }
+    }
+}
