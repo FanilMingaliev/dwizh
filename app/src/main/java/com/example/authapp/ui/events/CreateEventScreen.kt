@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -82,13 +83,20 @@ fun CreateEventScreen(
         )
         Spacer(modifier = Modifier.height(16.dp))
         Row {
-            Button(onClick = { viewModel.save(onSaveSuccess) }) {
+            Button(
+                onClick = { viewModel.save(onSaveSuccess) },
+                enabled = !state.isSaving
+            ) {
                 Text("Save")
             }
             Spacer(modifier = Modifier.width(12.dp))
             TextButton(onClick = onCancel) {
                 Text("Cancel")
             }
+        }
+        if (state.isSaving) {
+            Spacer(modifier = Modifier.height(8.dp))
+            CircularProgressIndicator()
         }
         state.errorMessage?.let {
             Spacer(modifier = Modifier.height(8.dp))

@@ -13,6 +13,7 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -24,7 +25,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.authapp.data.auth.FakeAuthRepository
+import com.example.authapp.data.auth.FirebaseAuthRepository
 import com.example.authapp.data.events.EventsRepository
 import com.example.authapp.data.profile.ProfileRepository
 import com.example.authapp.ui.auth.NameEntryScreen
@@ -81,17 +82,19 @@ object MainRoutes {
 fun AppNavHost(
     navController: NavHostController = rememberNavController()
 ) {
-    val authRepository = remember { FakeAuthRepository() }
+    val authRepository = remember { FirebaseAuthRepository() }
     val eventsRepository = remember { EventsRepository() }
     val profileRepository = remember { ProfileRepository() }
 
     val loginViewModel = remember { LoginViewModel(authRepository) }
     val eventsViewModel = remember { EventsViewModel(eventsRepository) }
     val profileViewModel = remember { ProfileViewModel(profileRepository) }
+    val currentUser by authRepository.currentUser.collectAsState()
+    val startDestination = if (currentUser != null) RootRoutes.Main else RootRoutes.Auth
 
     NavHost(
         navController = navController,
-        startDestination = RootRoutes.Auth
+        startDestination = startDestination
     ) {
         navigation(
             startDestination = AuthRoutes.Login,
@@ -107,7 +110,7 @@ fun AppNavHost(
                         }
                     },
                     onRegisterEmailClick = {
-                        navController.navigate(AuthRoutes.EmailAuth)
+                        navController.navigate(AuthRoutes.registerRoute(RegisterType.Email))
                     },
                     onRegisterPhoneClick = {
                         navController.navigate(AuthRoutes.PhoneAuth)
@@ -186,8 +189,8 @@ fun AppNavHost(
                     viewModel = registerViewModel,
                     onNavigateBack = { navController.navigateUp() },
                     onRegisterSuccess = {
-                        navController.navigate(RootRoutes.Main) {
-                            popUpTo(RootRoutes.Auth) { inclusive = true }
+                        navController.navigate(AuthRoutes.NameEntry) {
+                            popUpTo(AuthRoutes.Login) { inclusive = false }
                             launchSingleTop = true
                         }
                     }

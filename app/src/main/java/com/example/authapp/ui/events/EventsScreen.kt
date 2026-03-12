@@ -1,4 +1,4 @@
-package com.example.authapp.ui.events
+﻿package com.example.authapp.ui.events
 
 import android.app.DatePickerDialog
 import androidx.compose.foundation.background
@@ -23,6 +23,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
@@ -81,7 +82,7 @@ fun EventsScreen(
                     .clickable { }
                     .padding(horizontal = 16.dp, vertical = 8.dp)
             ) {
-                Text(text = "Фильтры")
+                Text(text = "Р¤РёР»СЊС‚СЂС‹")
             }
             Row {
                 Box(
@@ -117,16 +118,16 @@ fun EventsScreen(
                 .horizontalScroll(scrollState),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            FilterChip(text = "Сегодня", selected = filter == DateFilter.Today) {
+            FilterChip(text = "РЎРµРіРѕРґРЅСЏ", selected = filter == DateFilter.Today) {
                 filter = DateFilter.Today
             }
-            FilterChip(text = "Завтра", selected = filter == DateFilter.Tomorrow) {
+            FilterChip(text = "Р—Р°РІС‚СЂР°", selected = filter == DateFilter.Tomorrow) {
                 filter = DateFilter.Tomorrow
             }
-            FilterChip(text = "На неделе", selected = filter == DateFilter.Week) {
+            FilterChip(text = "РќР° РЅРµРґРµР»Рµ", selected = filter == DateFilter.Week) {
                 filter = DateFilter.Week
             }
-            FilterChip(text = "Дата", selected = filter == DateFilter.Custom) {
+            FilterChip(text = "Р”Р°С‚Р°", selected = filter == DateFilter.Custom) {
                 DatePickerDialog(
                     context,
                     { _, year, month, day ->
@@ -144,7 +145,7 @@ fun EventsScreen(
         OutlinedTextField(
             value = "",
             onValueChange = {},
-            placeholder = { Text("Поиск") },
+            placeholder = { Text("РџРѕРёСЃРє") },
             leadingIcon = { Icon(imageVector = Icons.Default.Search, contentDescription = null) },
             modifier = Modifier.fillMaxWidth(),
             enabled = false,
@@ -156,8 +157,8 @@ fun EventsScreen(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Text(text = "Движ сегодня", fontWeight = FontWeight.SemiBold)
-            Text(text = "${filtered.size} мероприятий", color = Color(0xFF7A8797))
+            Text(text = "Р”РІРёР¶ СЃРµРіРѕРґРЅСЏ", fontWeight = FontWeight.SemiBold)
+            Text(text = "${filtered.size} РјРµСЂРѕРїСЂРёСЏС‚РёР№", color = Color(0xFF7A8797))
         }
 
         Spacer(modifier = Modifier.height(12.dp))
@@ -165,14 +166,16 @@ fun EventsScreen(
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             items(filtered, key = { it.id }) { event ->
-                EventCard(event)
+                EventCard(event, onRegister = { selected ->
+                    viewModel.registerForEvent(selected.id)
+                })
             }
         }
     }
 }
 
 @Composable
-private fun EventCard(event: Event) {
+private fun EventCard(event: Event, onRegister: (Event) -> Unit) {
     val gradients = listOf(
         listOf(Color(0xFFFF9800), Color(0xFFFFC107)),
         listOf(Color(0xFF1FAE8A), Color(0xFF3ED7A3)),
@@ -196,18 +199,18 @@ private fun EventCard(event: Event) {
                         .background(Color.White.copy(alpha = 0.2f))
                         .padding(horizontal = 10.dp, vertical = 6.dp)
                 ) {
-                    Text(text = "Движ", color = Color.White, fontWeight = FontWeight.SemiBold)
+                    Text(text = "Р”РІРёР¶", color = Color.White, fontWeight = FontWeight.SemiBold)
                 }
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = "Движ",
+                    text = "Р”РІРёР¶",
                     color = Color.White,
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
                 )
                 Spacer(modifier = Modifier.height(4.dp))
                 Text(
-                    text = "начало в 16:00",
+                    text = "РЅР°С‡Р°Р»Рѕ РІ 16:00",
                     color = Color.White.copy(alpha = 0.9f)
                 )
                 Spacer(modifier = Modifier.height(8.dp))
@@ -217,9 +220,13 @@ private fun EventCard(event: Event) {
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    SmallChip("до 6")
-                    SmallChip("300 ₽")
-                    SmallChip("2-4 ч")
+                    SmallChip("РґРѕ 6")
+                    SmallChip("300 в‚Ѕ")
+                    SmallChip("2-4 С‡")
+                }
+                Spacer(modifier = Modifier.height(10.dp))
+                Button(onClick = { onRegister(event) }) {
+                    Text(text = "Join")
                 }
             }
         }
@@ -271,3 +278,5 @@ private fun filterEvents(
         events
     }
 }
+
+

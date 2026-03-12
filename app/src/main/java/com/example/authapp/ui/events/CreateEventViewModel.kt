@@ -1,11 +1,13 @@
 package com.example.authapp.ui.events
 
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.authapp.data.events.EventsRepository
 import com.example.authapp.data.model.Event
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.launch
 import java.time.LocalDate
 
 class CreateEventViewModel(
@@ -29,6 +31,7 @@ class CreateEventViewModel(
 
     fun save(onSuccess: () -> Unit) {
         val state = _uiState.value
+        if (state.isSaving) return
         val error = validate(state)
         if (error != null) {
             _uiState.value = state.copy(errorMessage = error)
@@ -41,9 +44,19 @@ class CreateEventViewModel(
             place = state.place,
             description = state.description
         )
-        repository.addEvent(event)
-        _uiState.value = CreateEventUiState()
-        onSuccess()
+        _uiState.value = state.copy(isSaving = true, errorMessage = null)
+        viewModelScope.launch {
+            val result = repository.addEvent(event)
+            if (result.isSuccess) {
+                _uiState.value = CreateEventUiState()
+                onSuccess()
+            } else {
+                _uiState.value = _uiState.value.copy(
+                    isSaving = false,
+                    errorMessage = result.exceptionOrNull()?.message ?: "Failed to create event"
+                )
+            }
+        }
     }
 
     private fun validate(state: CreateEventUiState): String? {
