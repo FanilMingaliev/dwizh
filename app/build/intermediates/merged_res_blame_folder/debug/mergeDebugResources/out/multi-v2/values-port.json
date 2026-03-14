@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.authapp-mergeDebugResources-61:/values-port/values-port.xml",
+            "outputFile": "com.example.authapp-mergeDebugResources-69:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Fanil\\.gradle\\caches\\8.13\\transforms\\bf60ff721e8916fc064cbe71d57e8140\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\Fanil\\.gradle\\caches\\8.13\\transforms\\b52b4147fbc26d727b3e2e1315725edb\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
