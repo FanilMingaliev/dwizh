@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "642593153081",
+    "project_id": "dwizh-f7e85",
+    "storage_bucket": "dwizh-f7e85.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642593153081:android:12a346500e65b9a9e1ade8",
+        "android_client_info": {
+          "package_name": "com.example.authapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxGjNxOveauF1ib_GHFuOUj0A4j3XPxJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
