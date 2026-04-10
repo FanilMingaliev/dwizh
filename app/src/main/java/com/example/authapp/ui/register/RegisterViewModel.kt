@@ -66,10 +66,7 @@ class RegisterViewModel(
                 return "Enter a valid email"
             }
         } else {
-            val digits = state.email.filter { it.isDigit() }
-            if (digits.length !in 10..11) {
-                return "Enter a valid phone number"
-            }
+            return "Phone authentication is not configured yet. Use email registration."
         }
         if (state.password.length < 6) {
             return "Password must be at least 6 characters"

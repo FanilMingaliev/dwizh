@@ -113,7 +113,7 @@ fun AppNavHost(
                         navController.navigate(AuthRoutes.registerRoute(RegisterType.Email))
                     },
                     onRegisterPhoneClick = {
-                        navController.navigate(AuthRoutes.PhoneAuth)
+                        navController.navigate(AuthRoutes.registerRoute(RegisterType.Phone))
                     }
                 )
             }

@@ -36,9 +36,9 @@ android {
 }
 
 firebaseAppDistribution {
-    appId = "YOUR_APP_ID"
-    testers = "testers@example.com"
-    releaseNotes = "Manual upload"
+    appId = "1:642593153081:android:12a346500e65b9a9e1ade8"
+    testers = "mingaliev.fanil@gmail.com"
+    releaseNotes = "Test build"
 }
 
 dependencies {

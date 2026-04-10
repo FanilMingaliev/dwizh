@@ -1,20 +1,14 @@
 package com.example.authapp.data.auth
 
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.tasks.await
 
 class FirebaseAuthRepository(
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
 ) : AuthRepository {
-    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
-
     private val _currentUser = MutableStateFlow(auth.currentUser?.uid)
     override val currentUser: StateFlow<String?> = _currentUser.asStateFlow()
 
@@ -43,11 +37,6 @@ class FirebaseAuthRepository(
     }
 
     override fun setCurrentUser(identifier: String) {
-        if (auth.currentUser != null) return
-        scope.launch {
-            runCatching {
-                auth.signInAnonymously().await()
-            }
-        }
+        _currentUser.value = auth.currentUser?.uid
     }
 }
