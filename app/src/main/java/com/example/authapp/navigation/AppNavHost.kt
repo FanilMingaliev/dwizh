@@ -110,10 +110,10 @@ fun AppNavHost(
                         }
                     },
                     onRegisterEmailClick = {
-                        navController.navigate(AuthRoutes.registerRoute(RegisterType.Email))
+                        navController.navigate(AuthRoutes.EmailAuth)
                     },
                     onRegisterPhoneClick = {
-                        navController.navigate(AuthRoutes.registerRoute(RegisterType.Phone))
+                        navController.navigate(AuthRoutes.PhoneAuth)
                     }
                 )
             }

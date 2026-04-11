@@ -1,4 +1,4 @@
-﻿package com.example.authapp.ui.login
+package com.example.authapp.ui.login
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -18,20 +19,15 @@ import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
-import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -42,10 +38,14 @@ fun LoginScreen(
     onRegisterEmailClick: () -> Unit,
     onRegisterPhoneClick: () -> Unit
 ) {
-    val state by viewModel.uiState.collectAsState()
+    // Keep signature for compatibility with current nav graph.
+    // This landing screen intentionally does not require view-model state.
+    @Suppress("UNUSED_VARIABLE")
+    val unused = viewModel
+
     val background = Color(0xFF2F80ED)
-    val lightPuzzle = Color(0xFFFFFFFF).copy(alpha = 0.08f)
-    val darkPuzzle = Color(0xFF1F62D0).copy(alpha = 0.35f)
+    val lightPuzzle = Color(0xFFFFFFFF).copy(alpha = 0.10f)
+    val darkPuzzle = Color(0xFF1C60CD).copy(alpha = 0.38f)
 
     Box(
         modifier = Modifier
@@ -74,7 +74,8 @@ fun LoginScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 24.dp, vertical = 32.dp),
+                .navigationBarsPadding()
+                .padding(horizontal = 24.dp, vertical = 28.dp),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Column {
@@ -85,18 +86,19 @@ fun LoginScreen(
                             .background(Color.White, RoundedCornerShape(8.dp))
                     )
                     Text(
-                        text = "Р”Р’РР–",
+                        text = "ДВИЖ",
                         color = Color.White,
-                        fontSize = 22.sp,
+                        fontSize = 44.sp,
                         fontWeight = FontWeight.Bold,
                         modifier = Modifier.padding(start = 12.dp)
                     )
                 }
-                Spacer(modifier = Modifier.height(32.dp))
+                Spacer(modifier = Modifier.height(220.dp))
                 Text(
-                    text = "РЈС‡Р°СЃС‚РІСѓР№С‚Рµ РІ РёРЅС‚РµСЂРµСЃРЅС‹С…\nРјРµСЂРѕРїСЂРёСЏС‚РёСЏС…, РЅР°С…РѕРґРёС‚Рµ\nРЅРѕРІС‹С… РґСЂСѓР·РµР№",
+                    text = "Участвуйте в интересных\nмероприятиях, находите\nновых друзей",
                     color = Color.White,
-                    fontSize = 20.sp,
+                    fontSize = 43.sp,
+                    lineHeight = 46.sp,
                     fontWeight = FontWeight.SemiBold
                 )
             }
@@ -106,74 +108,40 @@ fun LoginScreen(
                 horizontalAlignment = Alignment.Start
             ) {
                 Text(
-                    text = "РђРІС‚РѕСЂРёР·Р°С†РёСЏ",
+                    text = "Авторизация",
                     color = Color.White,
-                    fontSize = 14.sp,
+                    fontSize = 28.sp,
                     fontWeight = FontWeight.SemiBold
                 )
-                Spacer(modifier = Modifier.height(12.dp))
-                OutlinedTextField(
-                    value = state.email,
-                    onValueChange = { viewModel.onEvent(LoginEvent.EmailChanged(it), onLoginSuccess) },
-                    label = { Text("Email") },
-                    singleLine = true,
-                    modifier = Modifier.fillMaxWidth()
-                )
-                Spacer(modifier = Modifier.height(8.dp))
-                OutlinedTextField(
-                    value = state.password,
-                    onValueChange = { viewModel.onEvent(LoginEvent.PasswordChanged(it), onLoginSuccess) },
-                    label = { Text("Password") },
-                    singleLine = true,
-                    visualTransformation = PasswordVisualTransformation(),
-                    modifier = Modifier.fillMaxWidth()
-                )
-                Spacer(modifier = Modifier.height(12.dp))
-                Button(
-                    onClick = { viewModel.onEvent(LoginEvent.Submit, onLoginSuccess) },
-                    enabled = !state.isLoading,
-                    modifier = Modifier.fillMaxWidth(),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White,
-                        contentColor = Color.Black
-                    ),
-                    shape = RoundedCornerShape(28.dp)
-                ) {
-                    Text(text = "Войти")
-                }
-                if (state.isLoading) {
-                    Spacer(modifier = Modifier.height(8.dp))
-                    CircularProgressIndicator(color = Color.White)
-                }
-                state.errorMessage?.let {
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Text(text = it, color = Color.White)
-                }
-                Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(18.dp))
                 Button(
                     onClick = onRegisterEmailClick,
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(56.dp),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color.White,
                         contentColor = Color.Black
                     ),
-                    shape = RoundedCornerShape(28.dp)
+                    shape = RoundedCornerShape(30.dp)
                 ) {
                     Icon(imageVector = Icons.Default.Email, contentDescription = null)
-                    Text(text = "РїРѕ e-mail", modifier = Modifier.padding(start = 8.dp))
+                    Text(text = "по e-mail", fontSize = 22.sp, modifier = Modifier.padding(start = 8.dp))
                 }
-                Spacer(modifier = Modifier.height(12.dp))
+                Spacer(modifier = Modifier.height(14.dp))
                 Button(
                     onClick = onRegisterPhoneClick,
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(56.dp),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color.White,
                         contentColor = Color.Black
                     ),
-                    shape = RoundedCornerShape(28.dp)
+                    shape = RoundedCornerShape(30.dp)
                 ) {
                     Icon(imageVector = Icons.Default.Phone, contentDescription = null)
-                    Text(text = "РїРѕ РЅРѕРјРµСЂСѓ", modifier = Modifier.padding(start = 8.dp))
+                    Text(text = "по номеру", fontSize = 22.sp, modifier = Modifier.padding(start = 8.dp))
                 }
             }
 
@@ -182,13 +150,13 @@ fun LoginScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "РџСЂРѕРґРѕР»Р¶Р°СЏ С‚С‹ СЃРѕРіР»Р°С€Р°РµС€СЊСЃСЏ СЃ РЈСЃР»РѕРІРёСЏРјРё\nРёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ СЃРµСЂРІРёСЃР°",
+                    text = "Продолжая ты соглашаешься с Условиями\nиспользования сервиса",
                     color = Color.White.copy(alpha = 0.8f),
-                    fontSize = 12.sp
+                    fontSize = 13.sp
                 )
                 TextButton(onClick = {}) {
                     Text(
-                        text = "РџСЂРѕР±Р»РµРјС‹ СЃРѕ РІС…РѕРґРѕРј",
+                        text = "Проблемы со входом",
                         color = Color.White,
                         modifier = Modifier.alpha(0.9f)
                     )

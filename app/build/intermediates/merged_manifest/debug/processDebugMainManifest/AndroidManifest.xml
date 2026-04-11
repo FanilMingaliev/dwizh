@@ -23,7 +23,6 @@
         android:debuggable="true"
         android:extractNativeLibs="false"
         android:label="@string/app_name"
-        android:testOnly="true"
         android:theme="@style/Theme.AuthApp" >
         <activity
             android:name="com.example.authapp.MainActivity"

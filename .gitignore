@@ -1,2 +1,6 @@
 ﻿*.hprof
 .gradle/
+
+# Android / Gradle outputs (do not commit)
+**/build/
+local.properties
