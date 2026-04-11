@@ -1,5 +1,6 @@
 package com.example.authapp.ui.auth
 
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -13,46 +14,46 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-
-private enum class PhoneAuthStep {
-    PhoneInput,
-    CodeInput
-}
+import androidx.activity.ComponentActivity
 
 @Composable
 fun PhoneAuthScreen(
+    viewModel: PhoneAuthViewModel,
     onNavigateBack: () -> Unit,
     onOtherMethod: () -> Unit,
-    onAuthSuccess: (String) -> Unit
+    onSignedIn: (isNewUser: Boolean) -> Unit
 ) {
-    var step by remember { mutableStateOf(PhoneAuthStep.PhoneInput) }
-    var phone by remember { mutableStateOf("") }
-    var code by remember { mutableStateOf("") }
+    val state by viewModel.uiState.collectAsState()
+    val activity = LocalContext.current as? ComponentActivity
 
-    val digits = phone.filter { it.isDigit() }
-    val isPhoneValid = digits.length >= 10
-    val isCodeValid = code.length >= 4
-    val isContinueEnabled = if (step == PhoneAuthStep.PhoneInput) isPhoneValid else isCodeValid
+    DisposableEffect(Unit) {
+        viewModel.setSignedInListener(onSignedIn)
+        onDispose { viewModel.clearSignedInListener() }
+    }
 
     val buttonColor = Color(0xFF2F80ED)
     val disabledColor = Color(0xFFCED7E2)
     val subtitleColor = Color(0xFF73819A)
+
+    val digits = state.phone.filter { it.isDigit() }
+    val isPhoneValid = digits.length >= 10
+    val isCodeValid = state.code.length >= 6
 
     Column(
         modifier = Modifier
@@ -67,24 +68,24 @@ fun PhoneAuthScreen(
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             IconButton(onClick = onNavigateBack) {
-                Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Back")
+                Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Назад")
             }
-            Text(text = if (step == PhoneAuthStep.PhoneInput) "1/2" else "2/2")
+            Text(text = if (state.step == PhoneAuthStep.PhoneInput) "1/2" else "2/2")
         }
 
         Spacer(modifier = Modifier.height(24.dp))
         Text(
-            text = "Номер телефона",
+            text = if (state.step == PhoneAuthStep.PhoneInput) "Номер телефона" else "Код из SMS",
             fontWeight = FontWeight.SemiBold,
             fontSize = 20.sp,
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = if (step == PhoneAuthStep.PhoneInput) {
-                "Введите номер телефона, на который мы\nотправим код для авторизации"
+            text = if (state.step == PhoneAuthStep.PhoneInput) {
+                "Введите номер — придёт SMS с кодом. Без кода из SMS войти нельзя."
             } else {
-                "Мы отправили код на ваш номер телефона"
+                "Введите 6 цифр из сообщения. В Firebase Console включите «Телефон» и добавьте SHA-256 debug-ключа для Android Studio."
             },
             color = subtitleColor,
             fontSize = 13.sp,
@@ -92,44 +93,59 @@ fun PhoneAuthScreen(
         )
         Spacer(modifier = Modifier.height(24.dp))
 
-        if (step == PhoneAuthStep.PhoneInput) {
+        if (state.step == PhoneAuthStep.PhoneInput) {
             Text(text = "Номер", color = subtitleColor, fontSize = 12.sp)
             Spacer(modifier = Modifier.height(6.dp))
             OutlinedTextField(
-                value = phone,
-                onValueChange = { value -> phone = value },
-                placeholder = { Text("+7") },
+                value = state.phone,
+                onValueChange = viewModel::onPhoneChange,
+                placeholder = { Text("+7 или 8 900 123-45-67") },
                 singleLine = true,
+                enabled = !state.isLoading,
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(12.dp)
             )
         } else {
-            Text(text = "Код для логина", color = subtitleColor, fontSize = 12.sp)
+            Text(text = "Код из SMS", color = subtitleColor, fontSize = 12.sp)
             Spacer(modifier = Modifier.height(6.dp))
             OutlinedTextField(
-                value = code,
-                onValueChange = { value -> code = value },
-                placeholder = { Text("Введите код") },
+                value = state.code,
+                onValueChange = viewModel::onCodeChange,
+                placeholder = { Text("6 цифр") },
                 singleLine = true,
+                enabled = !state.isLoading,
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(12.dp)
             )
             Spacer(modifier = Modifier.height(8.dp))
-            TextButton(onClick = {}) {
+            TextButton(
+                onClick = {
+                    activity?.let { viewModel.resendVerificationCode(it) }
+                },
+                enabled = !state.isLoading && activity != null
+            ) {
                 Text("Отправить код повторно", color = subtitleColor)
             }
+        }
+
+        state.errorMessage?.let { msg ->
+            Spacer(modifier = Modifier.height(12.dp))
+            Text(text = msg, color = Color(0xFFC62828), fontSize = 13.sp)
         }
 
         Spacer(modifier = Modifier.weight(1f))
         Button(
             onClick = {
-                if (step == PhoneAuthStep.PhoneInput) {
-                    step = PhoneAuthStep.CodeInput
-                } else {
-                    onAuthSuccess(phone)
+                when (state.step) {
+                    PhoneAuthStep.PhoneInput -> activity?.let { viewModel.sendVerificationCode(it) }
+                    PhoneAuthStep.CodeInput -> viewModel.verifySmsCode()
                 }
             },
-            enabled = isContinueEnabled,
+            enabled = !state.isLoading && activity != null &&
+                when (state.step) {
+                    PhoneAuthStep.PhoneInput -> isPhoneValid
+                    PhoneAuthStep.CodeInput -> isCodeValid
+                },
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp),
@@ -141,7 +157,15 @@ fun PhoneAuthScreen(
             ),
             shape = RoundedCornerShape(24.dp)
         ) {
-            Text("Продолжить")
+            if (state.isLoading) {
+                CircularProgressIndicator(
+                    modifier = Modifier.height(22.dp),
+                    color = Color.White,
+                    strokeWidth = 2.dp
+                )
+            } else {
+                Text(if (state.step == PhoneAuthStep.PhoneInput) "Получить код" else "Войти")
+            }
         }
         Spacer(modifier = Modifier.height(12.dp))
         TextButton(onClick = onOtherMethod, modifier = Modifier.align(Alignment.CenterHorizontally)) {

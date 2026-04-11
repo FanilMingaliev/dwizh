@@ -1,6 +1,7 @@
 package com.example.authapp.data.auth
 
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.PhoneAuthCredential
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -29,14 +30,28 @@ class FirebaseAuthRepository(
     override suspend fun register(email: String, password: String): Result<Unit> {
         return runCatching {
             auth.createUserWithEmailAndPassword(email, password).await()
+            try {
+                auth.currentUser?.sendEmailVerification()?.await()
+            } catch (_: Exception) {
+                // письмо подтверждения необязательно для входа; ошибка шаблона/квоты не отменяет регистрацию
+            }
         }.map { Unit }
+    }
+
+    override suspend fun sendPasswordResetEmail(email: String): Result<Unit> {
+        return runCatching {
+            auth.sendPasswordResetEmail(email.trim()).await()
+        }.map { Unit }
+    }
+
+    override suspend fun signInWithPhoneCredential(credential: PhoneAuthCredential): Result<Boolean> {
+        return runCatching {
+            val result = auth.signInWithCredential(credential).await()
+            result.additionalUserInfo?.isNewUser == true
+        }
     }
 
     override fun logout() {
         auth.signOut()
-    }
-
-    override fun setCurrentUser(identifier: String) {
-        _currentUser.value = auth.currentUser?.uid
     }
 }

@@ -17,6 +17,9 @@ import androidx.compose.ui.res.painterResource
 import com.example.authapp.R
 import com.example.authapp.data.chats.ChatsRepository
 import com.example.authapp.ui.theme.DvizhColors
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -28,11 +31,13 @@ import androidx.navigation.navArgument
 import com.example.authapp.data.auth.FirebaseAuthRepository
 import com.example.authapp.data.events.EventsRepository
 import com.example.authapp.data.profile.ProfileRepository
-import com.example.authapp.ui.auth.NameEntryScreen
 import com.example.authapp.ui.auth.BirthDateScreen
-import com.example.authapp.ui.auth.GenderScreen
 import com.example.authapp.ui.auth.EmailAuthScreen
+import com.example.authapp.ui.auth.EmailAuthViewModel
+import com.example.authapp.ui.auth.GenderScreen
+import com.example.authapp.ui.auth.NameEntryScreen
 import com.example.authapp.ui.auth.PhoneAuthScreen
+import com.example.authapp.ui.auth.PhoneAuthViewModel
 import com.example.authapp.ui.chats.ChatDetailScreen
 import com.example.authapp.ui.chats.ChatsListScreen
 import com.example.authapp.ui.chats.ChatsViewModel
@@ -64,8 +69,11 @@ object RootRoutes {
 
 object AuthRoutes {
     const val Login = "login"
-    const val EmailAuth = "auth/email"
+    /** mode: `register` или `login` — начальный режим экрана email/пароль */
+    const val EmailAuth = "auth/email/{mode}"
     const val PhoneAuth = "auth/phone"
+
+    fun emailAuthRoute(mode: String): String = "auth/email/$mode"
     const val NameEntry = "auth/name"
     const val BirthDate = "auth/birthdate"
     const val Gender = "auth/gender"
@@ -126,22 +134,38 @@ fun AppNavHost(
             composable(AuthRoutes.Login) {
                 LoginScreen(
                     viewModel = loginViewModel,
-                    onLoginSuccess = {
-                        navController.navigate(RootRoutes.Main) {
-                            popUpTo(RootRoutes.Auth) { inclusive = true }
-                            launchSingleTop = true
-                        }
-                    },
                     onRegisterEmailClick = {
-                        navController.navigate(AuthRoutes.EmailAuth)
+                        navController.navigate(AuthRoutes.emailAuthRoute("register"))
+                    },
+                    onLoginEmailClick = {
+                        navController.navigate(AuthRoutes.emailAuthRoute("login"))
                     },
                     onRegisterPhoneClick = {
                         navController.navigate(AuthRoutes.PhoneAuth)
                     }
                 )
             }
-            composable(AuthRoutes.EmailAuth) {
+            composable(
+                route = AuthRoutes.EmailAuth,
+                arguments = listOf(
+                    navArgument("mode") {
+                        type = NavType.StringType
+                        defaultValue = "register"
+                    }
+                )
+            ) { entry ->
+                val mode = entry.arguments?.getString("mode") ?: "register"
+                val startRegister = mode != "login"
+                val emailAuthViewModel: EmailAuthViewModel = viewModel(
+                    key = "email_auth_$mode",
+                    factory = object : ViewModelProvider.Factory {
+                        @Suppress("UNCHECKED_CAST")
+                        override fun <T : ViewModel> create(modelClass: Class<T>): T =
+                            EmailAuthViewModel(authRepository, startRegister) as T
+                    }
+                )
                 EmailAuthScreen(
+                    viewModel = emailAuthViewModel,
                     onNavigateBack = { navController.navigateUp() },
                     onOtherMethod = {
                         navController.navigate(AuthRoutes.Login) {
@@ -149,14 +173,27 @@ fun AppNavHost(
                             launchSingleTop = true
                         }
                     },
-                    onAuthSuccess = { email ->
-                        authRepository.setCurrentUser(email)
+                    onRegisterSuccess = {
                         navController.navigate(AuthRoutes.NameEntry)
+                    },
+                    onLoginSuccess = {
+                        navController.navigate(RootRoutes.Main) {
+                            popUpTo(RootRoutes.Auth) { inclusive = true }
+                            launchSingleTop = true
+                        }
                     }
                 )
             }
             composable(AuthRoutes.PhoneAuth) {
+                val phoneAuthViewModel: PhoneAuthViewModel = viewModel(
+                    factory = object : ViewModelProvider.Factory {
+                        @Suppress("UNCHECKED_CAST")
+                        override fun <T : ViewModel> create(modelClass: Class<T>): T =
+                            PhoneAuthViewModel(authRepository) as T
+                    }
+                )
                 PhoneAuthScreen(
+                    viewModel = phoneAuthViewModel,
                     onNavigateBack = { navController.navigateUp() },
                     onOtherMethod = {
                         navController.navigate(AuthRoutes.Login) {
@@ -164,9 +201,15 @@ fun AppNavHost(
                             launchSingleTop = true
                         }
                     },
-                    onAuthSuccess = { phone ->
-                        authRepository.setCurrentUser(phone)
-                        navController.navigate(AuthRoutes.NameEntry)
+                    onSignedIn = { isNewUser ->
+                        if (isNewUser) {
+                            navController.navigate(AuthRoutes.NameEntry)
+                        } else {
+                            navController.navigate(RootRoutes.Main) {
+                                popUpTo(RootRoutes.Auth) { inclusive = true }
+                                launchSingleTop = true
+                            }
+                        }
                     }
                 )
             }

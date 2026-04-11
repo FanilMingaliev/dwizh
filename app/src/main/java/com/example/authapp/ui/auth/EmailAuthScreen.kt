@@ -13,41 +13,32 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-private enum class EmailAuthStep {
-    EmailInput,
-    CodeInput
-}
-
 @Composable
 fun EmailAuthScreen(
+    viewModel: EmailAuthViewModel,
     onNavigateBack: () -> Unit,
     onOtherMethod: () -> Unit,
-    onAuthSuccess: (String) -> Unit
+    onRegisterSuccess: () -> Unit,
+    onLoginSuccess: () -> Unit
 ) {
-    var step by remember { mutableStateOf(EmailAuthStep.EmailInput) }
-    var email by remember { mutableStateOf("") }
-    var code by remember { mutableStateOf("") }
-
-    val isEmailValid = email.contains("@")
-    val isCodeValid = code.length >= 4
-    val isContinueEnabled = if (step == EmailAuthStep.EmailInput) isEmailValid else isCodeValid
+    val state by viewModel.uiState.collectAsState()
 
     val buttonColor = Color(0xFF2F80ED)
     val disabledColor = Color(0xFFCED7E2)
@@ -66,69 +57,121 @@ fun EmailAuthScreen(
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             IconButton(onClick = onNavigateBack) {
-                Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Back")
+                Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "Назад")
             }
-            Text(text = if (step == EmailAuthStep.EmailInput) "1/2" else "2/2")
         }
 
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "E-mail",
+            text = if (state.isRegister) "Регистрация" else "Вход",
             fontWeight = FontWeight.SemiBold,
             fontSize = 20.sp,
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(12.dp))
+
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.Center
+        ) {
+            TextButton(onClick = { viewModel.setRegisterMode(true) }) {
+                Text(
+                    "Регистрация",
+                    color = if (state.isRegister) buttonColor else subtitleColor,
+                    fontWeight = if (state.isRegister) FontWeight.SemiBold else FontWeight.Normal
+                )
+            }
+            Text(text = " · ", color = subtitleColor)
+            TextButton(onClick = { viewModel.setRegisterMode(false) }) {
+                Text(
+                    "Вход",
+                    color = if (!state.isRegister) buttonColor else subtitleColor,
+                    fontWeight = if (!state.isRegister) FontWeight.SemiBold else FontWeight.Normal
+                )
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
         Text(
-            text = if (step == EmailAuthStep.EmailInput) {
-                "Введите e-mail, на который мы отправим ссылку\nдля авторизации"
+            text = if (state.isRegister) {
+                "Вход в приложение — по паролю, не по коду из письма. После регистрации Firebase может " +
+                    "отправить письмо со ссылкой для подтверждения адреса (это не код для входа)."
             } else {
-                "Мы отправили код на ваш адрес электронной\nпочты"
+                "Введите email и пароль. Если пароль забыли — «Забыли пароль?» (на почту придёт ссылка для сброса)."
             },
             color = subtitleColor,
             fontSize = 13.sp,
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(20.dp))
 
-        if (step == EmailAuthStep.EmailInput) {
-            Text(text = "E-mail", color = subtitleColor, fontSize = 12.sp)
-            Spacer(modifier = Modifier.height(6.dp))
-            OutlinedTextField(
-                value = email,
-                onValueChange = { value -> email = value },
-                placeholder = { Text("Адрес электронной почты") },
-                singleLine = true,
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(12.dp)
-            )
-        } else {
-            Text(text = "Код для логина", color = subtitleColor, fontSize = 12.sp)
-            Spacer(modifier = Modifier.height(6.dp))
-            OutlinedTextField(
-                value = code,
-                onValueChange = { value -> code = value },
-                placeholder = { Text("Введите код") },
-                singleLine = true,
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(12.dp)
-            )
+        Text(text = "E-mail", color = subtitleColor, fontSize = 12.sp)
+        Spacer(modifier = Modifier.height(6.dp))
+        OutlinedTextField(
+            value = state.email,
+            onValueChange = viewModel::onEmailChange,
+            placeholder = { Text("Адрес электронной почты") },
+            singleLine = true,
+            enabled = !state.isLoading,
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(12.dp)
+        )
+        Spacer(modifier = Modifier.height(14.dp))
+        Text(text = "Пароль", color = subtitleColor, fontSize = 12.sp)
+        Spacer(modifier = Modifier.height(6.dp))
+        OutlinedTextField(
+            value = state.password,
+            onValueChange = viewModel::onPasswordChange,
+            placeholder = { Text("Не менее 6 символов") },
+            singleLine = true,
+            enabled = !state.isLoading,
+            visualTransformation = PasswordVisualTransformation(),
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(12.dp)
+        )
+
+        if (!state.isRegister) {
             Spacer(modifier = Modifier.height(8.dp))
-            TextButton(onClick = {}) {
-                Text("Отправить код повторно", color = subtitleColor)
+            TextButton(onClick = { viewModel.sendPasswordReset() }, enabled = !state.isLoading) {
+                Text("Забыли пароль?", color = buttonColor, fontSize = 14.sp)
+            }
+        }
+
+        if (state.isRegister) {
+            Spacer(modifier = Modifier.height(14.dp))
+            Text(text = "Пароль ещё раз", color = subtitleColor, fontSize = 12.sp)
+            Spacer(modifier = Modifier.height(6.dp))
+            OutlinedTextField(
+                value = state.confirmPassword,
+                onValueChange = viewModel::onConfirmPasswordChange,
+                placeholder = { Text("Повторите пароль") },
+                singleLine = true,
+                enabled = !state.isLoading,
+                visualTransformation = PasswordVisualTransformation(),
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(12.dp)
+            )
+        }
+
+        state.errorMessage?.let { msg ->
+            Spacer(modifier = Modifier.height(12.dp))
+            Text(text = msg, color = Color(0xFFC62828), fontSize = 13.sp)
+        }
+        state.infoMessage?.let { msg ->
+            Spacer(modifier = Modifier.height(12.dp))
+            Text(text = msg, color = Color(0xFF2E7D32), fontSize = 13.sp)
+            Spacer(modifier = Modifier.height(4.dp))
+            TextButton(onClick = { viewModel.dismissInfo() }) {
+                Text("Понятно", color = subtitleColor, fontSize = 13.sp)
             }
         }
 
         Spacer(modifier = Modifier.weight(1f))
+
         Button(
-            onClick = {
-                if (step == EmailAuthStep.EmailInput) {
-                    step = EmailAuthStep.CodeInput
-                } else {
-                    onAuthSuccess(email)
-                }
-            },
-            enabled = isContinueEnabled,
+            onClick = { viewModel.submit(onRegisterSuccess, onLoginSuccess) },
+            enabled = !state.isLoading && state.email.contains("@") && state.password.length >= 6 &&
+                (!state.isRegister || state.confirmPassword.length >= 6),
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp),
@@ -140,7 +183,15 @@ fun EmailAuthScreen(
             ),
             shape = RoundedCornerShape(24.dp)
         ) {
-            Text("Продолжить")
+            if (state.isLoading) {
+                CircularProgressIndicator(
+                    modifier = Modifier.height(22.dp),
+                    color = Color.White,
+                    strokeWidth = 2.dp
+                )
+            } else {
+                Text(if (state.isRegister) "Создать аккаунт" else "Войти")
+            }
         }
         Spacer(modifier = Modifier.height(12.dp))
         TextButton(onClick = onOtherMethod, modifier = Modifier.align(Alignment.CenterHorizontally)) {

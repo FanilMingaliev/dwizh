@@ -7,5 +7,5 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAxGjNxOveauF1ib_GHFuOUj0A4j3XPxJk</string>
     <string name="google_storage_bucket" translatable="false">dwizh-f7e85.firebasestorage.app</string>
     <string name="project_id" translatable="false">dwizh-f7e85</string>
-    <style name="Theme.AuthApp" parent="Theme.Material3.DayNight.NoActionBar"/>
+    <style name="Theme.AuthApp" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>

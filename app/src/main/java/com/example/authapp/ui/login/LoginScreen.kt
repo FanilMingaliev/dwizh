@@ -1,5 +1,6 @@
 package com.example.authapp.ui.login
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -21,6 +22,7 @@ import androidx.compose.material.icons.filled.Phone
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -44,9 +46,10 @@ import com.example.authapp.ui.theme.DvizhColors
 @Composable
 fun LoginScreen(
     viewModel: LoginViewModel,
-    onLoginSuccess: () -> Unit,
     onRegisterEmailClick: () -> Unit,
-    onRegisterPhoneClick: () -> Unit
+    onLoginEmailClick: () -> Unit,
+    onRegisterPhoneClick: () -> Unit,
+    onTroubleSignInClick: () -> Unit = onLoginEmailClick
 ) {
     @Suppress("UNUSED_VARIABLE")
     val unused = viewModel
@@ -123,6 +126,24 @@ fun LoginScreen(
                     fontWeight = FontWeight.Bold
                 )
                 Spacer(modifier = Modifier.height(12.dp))
+                OutlinedButton(
+                    onClick = onLoginEmailClick,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(48.dp),
+                    border = BorderStroke(2.dp, Color.White),
+                    colors = ButtonDefaults.outlinedButtonColors(contentColor = Color.White),
+                    shape = RoundedCornerShape(100.dp)
+                ) {
+                    Icon(imageVector = Icons.Default.Email, contentDescription = null, tint = Color.White)
+                    Text(
+                        text = "Войти по email",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(start = 10.dp)
+                    )
+                }
+                Spacer(modifier = Modifier.height(12.dp))
                 Button(
                     onClick = onRegisterEmailClick,
                     modifier = Modifier
@@ -136,7 +157,7 @@ fun LoginScreen(
                 ) {
                     Icon(imageVector = Icons.Default.Email, contentDescription = null, tint = DvizhColors.Slate900)
                     Text(
-                        text = "по e-mail",
+                        text = "Создать аккаунт по email",
                         fontSize = 16.sp,
                         fontWeight = FontWeight.SemiBold,
                         modifier = Modifier.padding(start = 10.dp)
@@ -192,7 +213,7 @@ fun LoginScreen(
                     },
                     textAlign = TextAlign.Center
                 )
-                TextButton(onClick = {}) {
+                TextButton(onClick = onTroubleSignInClick) {
                     Text(
                         text = "Проблемы со входом",
                         color = DvizhColors.Slate300,

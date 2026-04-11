@@ -66,7 +66,7 @@ class RegisterViewModel(
                 return "Enter a valid email"
             }
         } else {
-            return "Phone authentication is not configured yet. Use email registration."
+            return "Регистрация по телефону — с главного экрана «по номеру». Здесь только email."
         }
         if (state.password.length < 6) {
             return "Password must be at least 6 characters"

@@ -1,5 +1,6 @@
 package com.example.authapp.data.auth
 
+import com.google.firebase.auth.PhoneAuthCredential
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -29,11 +30,18 @@ class FakeAuthRepository : AuthRepository {
         }
     }
 
-    override fun logout() {
-        _currentUser.value = null
+    override suspend fun signInWithPhoneCredential(@Suppress("UNUSED_PARAMETER") credential: PhoneAuthCredential): Result<Boolean> {
+        delay(300)
+        _currentUser.value = "fake-phone-user"
+        return Result.success(true)
     }
 
-    override fun setCurrentUser(identifier: String) {
-        _currentUser.value = identifier
+    override suspend fun sendPasswordResetEmail(email: String): Result<Unit> {
+        delay(400)
+        return if (email.contains("@")) Result.success(Unit) else Result.failure(IllegalArgumentException("bad email"))
+    }
+
+    override fun logout() {
+        _currentUser.value = null
     }
 }
