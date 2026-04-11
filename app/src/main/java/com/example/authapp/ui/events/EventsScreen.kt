@@ -2,6 +2,7 @@
 
 import android.app.DatePickerDialog
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
@@ -15,18 +16,19 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material3.Button
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -34,16 +36,16 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.Alignment
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.authapp.data.model.Event
-import androidx.compose.ui.platform.LocalContext
+import com.example.authapp.ui.theme.DvizhColors
 import java.time.LocalDate
 
 private enum class DateFilter {
@@ -69,44 +71,48 @@ fun EventsScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp)
+            .background(DvizhColors.ScreenBackground)
+            .padding(horizontal = 16.dp, vertical = 12.dp)
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Box(
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier
-                    .clip(RoundedCornerShape(18.dp))
-                    .background(Color(0xFFF1F4F8))
+                    .clip(RoundedCornerShape(20.dp))
                     .clickable { }
-                    .padding(horizontal = 16.dp, vertical = 8.dp)
+                    .background(DvizhColors.White)
+                    .border(1.dp, DvizhColors.CardStroke, RoundedCornerShape(20.dp))
+                    .padding(horizontal = 14.dp, vertical = 10.dp)
             ) {
-                Text(text = "Р¤РёР»СЊС‚СЂС‹")
+                Icon(
+                    imageVector = Icons.Default.Menu,
+                    contentDescription = null,
+                    tint = DvizhColors.Slate700,
+                    modifier = Modifier.size(20.dp)
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                Text(text = "Фильтры", color = DvizhColors.Slate800, fontWeight = FontWeight.Medium)
             }
             Row {
                 Box(
                     modifier = Modifier
                         .size(40.dp)
                         .clip(RoundedCornerShape(20.dp))
-                        .background(Color(0xFFF1F4F8))
+                        .background(DvizhColors.White)
+                        .border(1.dp, DvizhColors.CardStroke, RoundedCornerShape(20.dp))
                         .clickable { }
                         .padding(8.dp),
-                    contentAlignment = androidx.compose.ui.Alignment.Center
+                    contentAlignment = Alignment.Center
                 ) {
-                    Icon(imageVector = Icons.Default.FavoriteBorder, contentDescription = null)
-                }
-                Spacer(modifier = Modifier.width(8.dp))
-                Box(
-                    modifier = Modifier
-                        .size(40.dp)
-                        .clip(RoundedCornerShape(20.dp))
-                        .background(Color(0xFFF1F4F8))
-                        .clickable { }
-                        .padding(8.dp),
-                    contentAlignment = androidx.compose.ui.Alignment.Center
-                ) {
-                    Icon(imageVector = Icons.Default.Notifications, contentDescription = null)
+                    Icon(
+                        imageVector = Icons.Default.Notifications,
+                        contentDescription = null,
+                        tint = DvizhColors.Slate700
+                    )
                 }
             }
         }
@@ -118,16 +124,16 @@ fun EventsScreen(
                 .horizontalScroll(scrollState),
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            FilterChip(text = "РЎРµРіРѕРґРЅСЏ", selected = filter == DateFilter.Today) {
+            FilterChip(text = "Сегодня", selected = filter == DateFilter.Today) {
                 filter = DateFilter.Today
             }
-            FilterChip(text = "Р—Р°РІС‚СЂР°", selected = filter == DateFilter.Tomorrow) {
+            FilterChip(text = "Завтра", selected = filter == DateFilter.Tomorrow) {
                 filter = DateFilter.Tomorrow
             }
-            FilterChip(text = "РќР° РЅРµРґРµР»Рµ", selected = filter == DateFilter.Week) {
+            FilterChip(text = "На неделе", selected = filter == DateFilter.Week) {
                 filter = DateFilter.Week
             }
-            FilterChip(text = "Р”Р°С‚Р°", selected = filter == DateFilter.Custom) {
+            FilterChip(text = "Дата", selected = filter == DateFilter.Custom) {
                 DatePickerDialog(
                     context,
                     { _, year, month, day ->
@@ -145,20 +151,43 @@ fun EventsScreen(
         OutlinedTextField(
             value = "",
             onValueChange = {},
-            placeholder = { Text("РџРѕРёСЃРє") },
-            leadingIcon = { Icon(imageVector = Icons.Default.Search, contentDescription = null) },
+            placeholder = { Text("Поиск", color = DvizhColors.Slate500) },
+            leadingIcon = {
+                Icon(
+                    imageVector = Icons.Default.Search,
+                    contentDescription = null,
+                    tint = DvizhColors.Slate500
+                )
+            },
             modifier = Modifier.fillMaxWidth(),
             enabled = false,
-            singleLine = true
+            singleLine = true,
+            shape = RoundedCornerShape(16.dp),
+            colors = OutlinedTextFieldDefaults.colors(
+                disabledContainerColor = DvizhColors.White,
+                disabledTextColor = DvizhColors.Slate900,
+                disabledBorderColor = DvizhColors.CardStroke,
+                disabledPlaceholderColor = DvizhColors.Slate500
+            )
         )
 
-        Spacer(modifier = Modifier.height(12.dp))
+        Spacer(modifier = Modifier.height(16.dp))
         Row(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(text = "Р”РІРёР¶ СЃРµРіРѕРґРЅСЏ", fontWeight = FontWeight.SemiBold)
-            Text(text = "${filtered.size} РјРµСЂРѕРїСЂРёСЏС‚РёР№", color = Color(0xFF7A8797))
+            Text(
+                text = "Движ сегодня",
+                fontWeight = FontWeight.Bold,
+                fontSize = 18.sp,
+                color = DvizhColors.Slate900
+            )
+            Text(
+                text = "${filtered.size} мероприятий",
+                color = DvizhColors.Slate500,
+                fontSize = 14.sp
+            )
         }
 
         Spacer(modifier = Modifier.height(12.dp))
@@ -166,7 +195,7 @@ fun EventsScreen(
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
             items(filtered, key = { it.id }) { event ->
-                EventCard(event, onRegister = { selected ->
+                EventCardPdfStyle(event, onRegister = { selected ->
                     viewModel.registerForEvent(selected.id)
                 })
             }
@@ -175,59 +204,80 @@ fun EventsScreen(
 }
 
 @Composable
-private fun EventCard(event: Event, onRegister: (Event) -> Unit) {
-    val gradients = listOf(
-        listOf(Color(0xFFFF9800), Color(0xFFFFC107)),
-        listOf(Color(0xFF1FAE8A), Color(0xFF3ED7A3)),
-        listOf(Color(0xFFFF7A5C), Color(0xFFFFB35C))
-    )
-    val idx = (event.id.hashCode() and 0x7fffffff) % gradients.size
-    val colors = gradients[idx]
-
+private fun EventCardPdfStyle(event: Event, onRegister: (Event) -> Unit) {
     Card(
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier
+            .fillMaxWidth()
+            .border(1.dp, DvizhColors.CardStroke, RoundedCornerShape(16.dp)),
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = DvizhColors.White),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp)
     ) {
-        Box(
-            modifier = Modifier
-                .background(Brush.horizontalGradient(colors))
-                .padding(16.dp)
-        ) {
-            Column {
-                Box(
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(12.dp))
-                        .background(Color.White.copy(alpha = 0.2f))
-                        .padding(horizontal = 10.dp, vertical = 6.dp)
-                ) {
-                    Text(text = "Р”РІРёР¶", color = Color.White, fontWeight = FontWeight.SemiBold)
-                }
-                Spacer(modifier = Modifier.height(8.dp))
+        Column(modifier = Modifier.padding(16.dp)) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
                 Text(
-                    text = "Р”РІРёР¶",
+                    text = "2 км",
+                    color = DvizhColors.Slate500,
+                    fontSize = 13.sp
+                )
+                Text(
+                    text = "Искусство и творчество",
+                    color = DvizhColors.Brand,
+                    fontSize = 13.sp,
+                    fontWeight = FontWeight.Medium
+                )
+            }
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = event.description.ifBlank { "Мероприятие" },
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
+                color = DvizhColors.Slate900
+            )
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(
+                text = event.date.ifBlank { "Дата уточняется" },
+                color = DvizhColors.Slate600,
+                fontSize = 14.sp
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text("47", color = DvizhColors.Slate700, fontSize = 14.sp, fontWeight = FontWeight.SemiBold)
+                Text("Вдохновитель", color = DvizhColors.Slate600, fontSize = 13.sp)
+            }
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(
+                text = event.place.ifBlank { "Организатор" },
+                color = DvizhColors.Slate600,
+                fontSize = 14.sp
+            )
+            Spacer(modifier = Modifier.height(10.dp))
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                SmallChip("до 6")
+                SmallChip("2–4 ч")
+                SmallChip("300 ₽")
+                SmallChip("18–30")
+                SmallChip("все")
+            }
+            Spacer(modifier = Modifier.height(12.dp))
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(100.dp))
+                    .background(DvizhColors.Brand)
+                    .clickable { onRegister(event) }
+                    .padding(vertical = 12.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = "Участвовать",
                     color = Color.White,
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.SemiBold,
+                    fontSize = 15.sp
                 )
-                Spacer(modifier = Modifier.height(4.dp))
-                Text(
-                    text = "РЅР°С‡Р°Р»Рѕ РІ 16:00",
-                    color = Color.White.copy(alpha = 0.9f)
-                )
-                Spacer(modifier = Modifier.height(8.dp))
-                Text(
-                    text = event.place,
-                    color = Color.White.copy(alpha = 0.9f)
-                )
-                Spacer(modifier = Modifier.height(8.dp))
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    SmallChip("РґРѕ 6")
-                    SmallChip("300 в‚Ѕ")
-                    SmallChip("2-4 С‡")
-                }
-                Spacer(modifier = Modifier.height(10.dp))
-                Button(onClick = { onRegister(event) }) {
-                    Text(text = "Join")
-                }
             }
         }
     }
@@ -235,16 +285,18 @@ private fun EventCard(event: Event, onRegister: (Event) -> Unit) {
 
 @Composable
 private fun FilterChip(text: String, selected: Boolean, onClick: () -> Unit) {
-    val bg = if (selected) Color(0xFF1E2A3B) else Color(0xFFF1F4F8)
-    val fg = if (selected) Color.White else Color(0xFF4C5B6A)
+    val bg = if (selected) DvizhColors.Brand else DvizhColors.White
+    val fg = if (selected) Color.White else DvizhColors.Slate700
+    val border = if (selected) DvizhColors.Brand else DvizhColors.CardStroke
     Box(
         modifier = Modifier
-            .clip(RoundedCornerShape(18.dp))
+            .clip(RoundedCornerShape(100.dp))
+            .border(1.dp, border, RoundedCornerShape(100.dp))
             .background(bg)
             .clickable { onClick() }
             .padding(horizontal = 14.dp, vertical = 8.dp)
     ) {
-        Text(text = text, color = fg)
+        Text(text = text, color = fg, fontSize = 14.sp)
     }
 }
 
@@ -252,11 +304,11 @@ private fun FilterChip(text: String, selected: Boolean, onClick: () -> Unit) {
 private fun SmallChip(text: String) {
     Box(
         modifier = Modifier
-            .clip(RoundedCornerShape(10.dp))
-            .background(Color.White.copy(alpha = 0.25f))
+            .clip(RoundedCornerShape(8.dp))
+            .background(DvizhColors.Slate100)
             .padding(horizontal = 8.dp, vertical = 4.dp)
     ) {
-        Text(text = text, color = Color.White, fontSize = 12.sp)
+        Text(text = text, color = DvizhColors.Slate700, fontSize = 12.sp)
     }
 }
 
@@ -278,5 +330,3 @@ private fun filterEvents(
         events
     }
 }
-
-

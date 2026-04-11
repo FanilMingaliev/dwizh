@@ -1,5 +1,6 @@
 package com.example.authapp.ui.login
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -27,9 +28,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.authapp.R
+import com.example.authapp.ui.theme.DvizhColors
 
 @Composable
 fun LoginScreen(
@@ -38,44 +48,42 @@ fun LoginScreen(
     onRegisterEmailClick: () -> Unit,
     onRegisterPhoneClick: () -> Unit
 ) {
-    // Keep signature for compatibility with current nav graph.
-    // This landing screen intentionally does not require view-model state.
     @Suppress("UNUSED_VARIABLE")
     val unused = viewModel
 
-    val background = Color(0xFF2F80ED)
-    val lightPuzzle = Color(0xFFFFFFFF).copy(alpha = 0.10f)
-    val darkPuzzle = Color(0xFF1C60CD).copy(alpha = 0.38f)
+    val brand = DvizhColors.Brand
 
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(background)
+            .background(brand)
     ) {
-        Box(
+        Image(
+            painter = painterResource(R.drawable.auth_puzzle_decor),
+            contentDescription = null,
             modifier = Modifier
-                .size(220.dp)
-                .offset(x = (-40).dp, y = 120.dp)
-                .background(darkPuzzle, RoundedCornerShape(32.dp))
+                .align(Alignment.TopStart)
+                .size(280.dp)
+                .offset(x = (-100).dp, y = 24.dp)
+                .alpha(0.38f),
+            contentScale = ContentScale.Fit
         )
-        Box(
+        Image(
+            painter = painterResource(R.drawable.auth_puzzle_decor),
+            contentDescription = null,
             modifier = Modifier
-                .size(120.dp)
-                .offset(x = 240.dp, y = 160.dp)
-                .background(lightPuzzle, RoundedCornerShape(24.dp))
-        )
-        Box(
-            modifier = Modifier
-                .size(80.dp)
-                .offset(x = 260.dp, y = 340.dp)
-                .background(lightPuzzle, RoundedCornerShape(18.dp))
+                .align(Alignment.TopEnd)
+                .size(200.dp)
+                .offset(x = 40.dp, y = 120.dp)
+                .alpha(0.22f),
+            contentScale = ContentScale.Fit
         )
 
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .navigationBarsPadding()
-                .padding(horizontal = 24.dp, vertical = 28.dp),
+                .padding(horizontal = 20.dp, vertical = 24.dp),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Column {
@@ -88,17 +96,18 @@ fun LoginScreen(
                     Text(
                         text = "ДВИЖ",
                         color = Color.White,
-                        fontSize = 44.sp,
+                        fontSize = 22.sp,
                         fontWeight = FontWeight.Bold,
-                        modifier = Modifier.padding(start = 12.dp)
+                        letterSpacing = 0.5.sp,
+                        modifier = Modifier.padding(start = 10.dp)
                     )
                 }
-                Spacer(modifier = Modifier.height(220.dp))
+                Spacer(modifier = Modifier.height(48.dp))
                 Text(
-                    text = "Участвуйте в интересных\nмероприятиях, находите\nновых друзей",
+                    text = "Участвуйте в интересных мероприятиях, находите новых друзей",
                     color = Color.White,
-                    fontSize = 43.sp,
-                    lineHeight = 46.sp,
+                    fontSize = 28.sp,
+                    lineHeight = (28f * 1.10f).sp,
                     fontWeight = FontWeight.SemiBold
                 )
             }
@@ -110,38 +119,48 @@ fun LoginScreen(
                 Text(
                     text = "Авторизация",
                     color = Color.White,
-                    fontSize = 28.sp,
-                    fontWeight = FontWeight.SemiBold
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold
                 )
-                Spacer(modifier = Modifier.height(18.dp))
+                Spacer(modifier = Modifier.height(12.dp))
                 Button(
                     onClick = onRegisterEmailClick,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(56.dp),
+                        .height(48.dp),
                     colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White,
-                        contentColor = Color.Black
+                        containerColor = DvizhColors.White,
+                        contentColor = DvizhColors.Slate900
                     ),
-                    shape = RoundedCornerShape(30.dp)
+                    shape = RoundedCornerShape(100.dp)
                 ) {
-                    Icon(imageVector = Icons.Default.Email, contentDescription = null)
-                    Text(text = "по e-mail", fontSize = 22.sp, modifier = Modifier.padding(start = 8.dp))
+                    Icon(imageVector = Icons.Default.Email, contentDescription = null, tint = DvizhColors.Slate900)
+                    Text(
+                        text = "по e-mail",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(start = 10.dp)
+                    )
                 }
-                Spacer(modifier = Modifier.height(14.dp))
+                Spacer(modifier = Modifier.height(12.dp))
                 Button(
                     onClick = onRegisterPhoneClick,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(56.dp),
+                        .height(48.dp),
                     colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White,
-                        contentColor = Color.Black
+                        containerColor = DvizhColors.White,
+                        contentColor = DvizhColors.Slate900
                     ),
-                    shape = RoundedCornerShape(30.dp)
+                    shape = RoundedCornerShape(100.dp)
                 ) {
-                    Icon(imageVector = Icons.Default.Phone, contentDescription = null)
-                    Text(text = "по номеру", fontSize = 22.sp, modifier = Modifier.padding(start = 8.dp))
+                    Icon(imageVector = Icons.Default.Phone, contentDescription = null, tint = DvizhColors.Slate900)
+                    Text(
+                        text = "по номеру",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(start = 10.dp)
+                    )
                 }
             }
 
@@ -150,22 +169,38 @@ fun LoginScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Продолжая ты соглашаешься с Условиями\nиспользования сервиса",
-                    color = Color.White.copy(alpha = 0.8f),
-                    fontSize = 13.sp
+                    text = buildAnnotatedString {
+                        withStyle(
+                            SpanStyle(
+                                color = DvizhColors.Slate300,
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.Normal
+                            )
+                        ) {
+                            append("Продолжая ты соглашаешься с ")
+                        }
+                        withStyle(
+                            SpanStyle(
+                                color = DvizhColors.Slate300,
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.Normal,
+                                textDecoration = TextDecoration.Underline
+                            )
+                        ) {
+                            append("Условиями использования сервиса")
+                        }
+                    },
+                    textAlign = TextAlign.Center
                 )
                 TextButton(onClick = {}) {
                     Text(
                         text = "Проблемы со входом",
-                        color = Color.White,
-                        modifier = Modifier.alpha(0.9f)
+                        color = DvizhColors.Slate300,
+                        fontSize = 14.sp,
+                        textDecoration = TextDecoration.Underline
                     )
                 }
             }
         }
     }
 }
-
-
-
-

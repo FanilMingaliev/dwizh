@@ -4,10 +4,10 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Email
-import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Send
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
@@ -33,10 +33,12 @@ import com.example.authapp.ui.auth.BirthDateScreen
 import com.example.authapp.ui.auth.GenderScreen
 import com.example.authapp.ui.auth.EmailAuthScreen
 import com.example.authapp.ui.auth.PhoneAuthScreen
+import com.example.authapp.ui.chats.ChatsListScreen
 import com.example.authapp.ui.events.CreateEventScreen
 import com.example.authapp.ui.events.CreateEventViewModel
 import com.example.authapp.ui.events.EventsScreen
 import com.example.authapp.ui.events.EventsViewModel
+import com.example.authapp.ui.myevents.MyMovesScreen
 import com.example.authapp.ui.login.LoginScreen
 import com.example.authapp.ui.login.LoginViewModel
 import com.example.authapp.ui.profile.ProfileScreen
@@ -68,6 +70,8 @@ object AuthRoutes {
 
 object MainRoutes {
     const val Events = "events"
+    const val MyMoves = "my_moves"
+    const val Chats = "chats"
     const val Profile = "profile"
     const val CreateEvent = "events/create"
     const val EditProfile = "profile/edit"
@@ -210,6 +214,18 @@ fun AppNavHost(
                     )
                 }
             }
+            composable(MainRoutes.MyMoves) {
+                MainScaffold(navController = navController, showBottomBar = true) {
+                    MyMovesScreen(
+                        onCreateMove = { navController.navigate(MainRoutes.CreateEvent) }
+                    )
+                }
+            }
+            composable(MainRoutes.Chats) {
+                MainScaffold(navController = navController, showBottomBar = true) {
+                    ChatsListScreen()
+                }
+            }
             composable(MainRoutes.Profile) {
                 MainScaffold(navController = navController, showBottomBar = true) {
                     ProfileScreen(
@@ -299,8 +315,20 @@ private fun MainScaffold(
                                 restoreState = true
                             }
                         },
-                        icon = { androidx.compose.material3.Icon(Icons.Default.Home, contentDescription = "Events") },
-                        label = { Text("Events") }
+                        icon = { androidx.compose.material3.Icon(Icons.Default.Home, contentDescription = "Лента") },
+                        label = { Text("Лента") }
+                    )
+                    NavigationBarItem(
+                        selected = currentRoute == MainRoutes.MyMoves,
+                        onClick = {
+                            navController.navigate(MainRoutes.MyMoves) {
+                                popUpTo(MainRoutes.Events) { saveState = true }
+                                launchSingleTop = true
+                                restoreState = true
+                            }
+                        },
+                        icon = { androidx.compose.material3.Icon(Icons.Default.List, contentDescription = "Мои движы") },
+                        label = { Text("Мои") }
                     )
                     NavigationBarItem(
                         selected = currentRoute == MainRoutes.CreateEvent,
@@ -310,20 +338,20 @@ private fun MainScaffold(
                                 launchSingleTop = true
                             }
                         },
-                        icon = { androidx.compose.material3.Icon(Icons.Default.Add, contentDescription = "Add") },
-                        label = { Text("Add") }
+                        icon = { androidx.compose.material3.Icon(Icons.Default.Add, contentDescription = "Создать") },
+                        label = { Text("Создать") }
                     )
                     NavigationBarItem(
-                        selected = false,
-                        onClick = {},
-                        icon = { androidx.compose.material3.Icon(Icons.Default.FavoriteBorder, contentDescription = "Favorites") },
-                        label = { Text("Likes") }
-                    )
-                    NavigationBarItem(
-                        selected = false,
-                        onClick = {},
-                        icon = { androidx.compose.material3.Icon(Icons.Default.Email, contentDescription = "Chats") },
-                        label = { Text("Chats") }
+                        selected = currentRoute == MainRoutes.Chats,
+                        onClick = {
+                            navController.navigate(MainRoutes.Chats) {
+                                popUpTo(MainRoutes.Events) { saveState = true }
+                                launchSingleTop = true
+                                restoreState = true
+                            }
+                        },
+                        icon = { androidx.compose.material3.Icon(Icons.Default.Send, contentDescription = "Чаты") },
+                        label = { Text("Чаты") }
                     )
                     NavigationBarItem(
                         selected = currentRoute == MainRoutes.Profile,
@@ -334,8 +362,8 @@ private fun MainScaffold(
                                 restoreState = true
                             }
                         },
-                        icon = { androidx.compose.material3.Icon(Icons.Default.Person, contentDescription = "Profile") },
-                        label = { Text("Profile") }
+                        icon = { androidx.compose.material3.Icon(Icons.Default.Person, contentDescription = "Профиль") },
+                        label = { Text("Профиль") }
                     )
                 }
             }
