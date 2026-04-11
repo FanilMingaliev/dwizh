@@ -9,334 +9,463 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
-11-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:22-64
+11-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
 12-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:22-76
-13    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-13-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
-13-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
-14
-15    <permission
-15-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-16        android:name="com.example.authapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-16-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-17        android:protectionLevel="signature" />
-17-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
-18
-19    <uses-permission android:name="com.example.authapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-19-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-19-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-20
-21    <application
-21-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:5-15:19
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-23        android:debuggable="true"
-24        android:extractNativeLibs="false"
-25        android:label="@string/app_name"
-25-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:5:9-41
-26        android:theme="@style/Theme.AuthApp" >
-26-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:6:9-45
-27        <activity
-27-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:7:9-14:20
-28            android:name="com.example.authapp.MainActivity"
-28-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:8:13-41
-29            android:exported="true" >
-29-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:9:13-36
-30            <intent-filter>
-30-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:10:13-13:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:11:17-69
-31-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:11:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:12:17-77
-33-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:12:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <service
-37-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:8:9-14:19
-38            android:name="com.google.firebase.components.ComponentDiscoveryService"
-38-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:9:13-84
-39            android:directBootAware="true"
-39-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
-40            android:exported="false" >
-40-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:10:13-37
-41            <meta-data
-41-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:11:13-13:85
-42                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
-42-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:12:17-119
-43                android:value="com.google.firebase.components.ComponentRegistrar" />
-43-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:13:17-82
-44            <meta-data
-44-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
-45                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-45-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
-46                android:value="com.google.firebase.components.ComponentRegistrar" />
-46-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
-47            <meta-data
-47-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:12:13-14:85
-48                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
-48-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:13:17-129
-49                android:value="com.google.firebase.components.ComponentRegistrar" />
-49-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:14:17-82
-50            <meta-data
-50-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
-51                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
-51-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
-52                android:value="com.google.firebase.components.ComponentRegistrar" />
-52-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
-53            <meta-data
-53-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
-54                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-54-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
-55                android:value="com.google.firebase.components.ComponentRegistrar" />
-55-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
-56            <meta-data
-56-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
-57                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
-57-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
-58                android:value="com.google.firebase.components.ComponentRegistrar" />
-58-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
-59            <meta-data
-59-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
-60                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
-60-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
-61                android:value="com.google.firebase.components.ComponentRegistrar" />
-61-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
-62        </service>
-63
-64        <activity
-64-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
-65            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-65-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
-66            android:excludeFromRecents="true"
-66-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
-67            android:exported="true"
-67-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
-68            android:launchMode="singleTask"
-68-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
-69            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-69-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
-70            <intent-filter>
-70-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
-71                <action android:name="android.intent.action.VIEW" />
-71-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
-71-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
-72
-73                <category android:name="android.intent.category.DEFAULT" />
-73-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
-73-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
-74                <category android:name="android.intent.category.BROWSABLE" />
-74-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
-74-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
-75
-76                <data
-76-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
-77                    android:host="firebase.auth"
-77-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
-78                    android:path="/"
-78-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
-79                    android:scheme="genericidp" />
-79-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
-80            </intent-filter>
-81        </activity>
-82        <activity
-82-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
-83            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-83-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
-84            android:excludeFromRecents="true"
-84-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
-85            android:exported="true"
-85-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
-86            android:launchMode="singleTask"
-86-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
-87            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-87-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
-88            <intent-filter>
-88-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
-89                <action android:name="android.intent.action.VIEW" />
-89-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
-89-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
-90
-91                <category android:name="android.intent.category.DEFAULT" />
-91-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
-91-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
-92                <category android:name="android.intent.category.BROWSABLE" />
-92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
-92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
-93
-94                <data
-94-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
-95                    android:host="firebase.auth"
-95-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
-96                    android:path="/"
-96-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
-97                    android:scheme="recaptcha" />
-97-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
-98            </intent-filter>
-99        </activity>
+13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+13-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:23:5-77
+13-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:23:22-74
+14    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+14-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:24:5-68
+14-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:24:22-65
+15    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+15-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:26:5-82
+15-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:26:22-79
+16    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+16-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+16-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+17
+18    <permission
+18-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+19        android:name="com.example.authapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+19-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+20        android:protectionLevel="signature" />
+20-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+21
+22    <uses-permission android:name="com.example.authapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+22-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+22-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+23
+24    <application
+24-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:6:5-25:19
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:label="@string/app_name"
+28-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:7:9-41
+29        android:theme="@style/Theme.AuthApp" >
+29-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:8:9-45
+30        <activity
+30-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:9:9-16:20
+31            android:name="com.example.authapp.MainActivity"
+31-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:10:13-41
+32            android:exported="true" >
+32-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:11:13-36
+33            <intent-filter>
+33-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:12:13-15:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:13:17-69
+34-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:13:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:14:17-77
+36-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:14:27-74
+37            </intent-filter>
+38        </activity>
+39
+40        <service
+40-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:18:9-24:19
+41            android:name="com.example.authapp.fcm.DvizhFirebaseMessagingService"
+41-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:19:13-62
+42            android:exported="false" >
+42-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:20:13-37
+43            <intent-filter>
+43-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:21:13-23:29
+44                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+44-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:22:17-78
+44-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:22:25-75
+45            </intent-filter>
+46        </service>
+47        <service
+47-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:8:9-14:19
+48            android:name="com.google.firebase.components.ComponentDiscoveryService"
+48-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:9:13-84
+49            android:directBootAware="true"
+49-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+50            android:exported="false" >
+50-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:10:13-37
+51            <meta-data
+51-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:11:13-13:85
+52                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+52-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:12:17-119
+53                android:value="com.google.firebase.components.ComponentRegistrar" />
+53-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:13:17-82
+54            <meta-data
+54-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
+55                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+55-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
+56                android:value="com.google.firebase.components.ComponentRegistrar" />
+56-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
+57            <meta-data
+57-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:12:13-14:85
+58                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+58-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:13:17-129
+59                android:value="com.google.firebase.components.ComponentRegistrar" />
+59-->[com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:14:17-82
+60            <meta-data
+60-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:17:13-19:85
+61                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+61-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:18:17-122
+62                android:value="com.google.firebase.components.ComponentRegistrar" />
+62-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:19:17-82
+63            <meta-data
+63-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:20:13-22:85
+64                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+64-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
+65                android:value="com.google.firebase.components.ComponentRegistrar" />
+65-->[com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
+66            <meta-data
+66-->[com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:26:13-28:85
+67                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+67-->[com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:27:17-129
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:28:17-82
+69            <meta-data
+69-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:57:13-59:85
+70                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+70-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:58:17-122
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:59:17-82
+72            <meta-data
+72-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:60:13-62:85
+73                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+73-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:61:17-119
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:62:17-82
+75            <meta-data
+75-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+76                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+76-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+78            <meta-data
+78-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+79                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+79-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+81            <meta-data
+81-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+82                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+82-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+85                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+85-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+87            <meta-data
+87-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+88                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+88-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+90        </service>
+91
+92        <activity
+92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
+93            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+93-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
+94            android:excludeFromRecents="true"
+94-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
+95            android:exported="true"
+95-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
+96            android:launchMode="singleTask"
+96-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+97-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
+98            <intent-filter>
+98-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
+99                <action android:name="android.intent.action.VIEW" />
+99-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+99-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
 100
-101        <service
-101-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
-102            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
-102-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
-103            android:enabled="true"
-103-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
-104            android:exported="false" >
-104-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
-105            <meta-data
-105-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
-106                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
-106-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
-107                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
-107-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
-108        </service>
-109
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+101-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+102-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+103
+104                <data
+104-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+105                    android:host="firebase.auth"
+105-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+106                    android:path="/"
+106-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+107                    android:scheme="genericidp" />
+107-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+108            </intent-filter>
+109        </activity>
 110        <activity
-110-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
-111            android:name="androidx.credentials.playservices.HiddenActivity"
-111-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
-112            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-112-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
-113            android:enabled="true"
-113-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
-114            android:exported="false"
-114-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
-115            android:fitsSystemWindows="true"
-115-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
-116            android:theme="@style/Theme.Hidden" >
-116-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
-117        </activity>
-118        <activity
-118-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
-119            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-119-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
-120            android:excludeFromRecents="true"
-120-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
-121            android:exported="false"
-121-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
-122            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-122-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
-123        <!--
-124            Service handling Google Sign-In user revocation. For apps that do not integrate with
-125            Google Sign-In, this service will never be started.
-126        -->
-127        <service
-127-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
-128            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-128-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
-129            android:exported="true"
-129-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
-130            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-130-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
-131            android:visibleToInstantApps="true" />
-131-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
-132
-133        <activity
-133-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-134            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-134-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-135            android:exported="false"
-135-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-136            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-136-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-137
-138        <provider
-138-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
-139            android:name="com.google.firebase.provider.FirebaseInitProvider"
-139-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-140            android:authorities="com.example.authapp.firebaseinitprovider"
-140-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
-141            android:directBootAware="true"
-141-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
-142            android:exported="false"
-142-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
-143            android:initOrder="100" />
-143-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
-144
-145        <activity
-145-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-146            android:name="androidx.compose.ui.tooling.PreviewActivity"
-146-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-147            android:exported="true" />
-147-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-148
-149        <provider
-149-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-150            android:name="androidx.startup.InitializationProvider"
-150-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-151            android:authorities="com.example.authapp.androidx-startup"
-151-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-152            android:exported="false" >
-152-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-153            <meta-data
-153-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-154                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-154-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-155                android:value="androidx.startup" />
-155-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-156            <meta-data
-156-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\41fa4b4bce6643892d6a2273bdf01897\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:29:13-31:52
-157                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-157-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\41fa4b4bce6643892d6a2273bdf01897\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:30:17-78
-158                android:value="androidx.startup" />
-158-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\41fa4b4bce6643892d6a2273bdf01897\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:31:17-49
-159            <meta-data
-159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-160                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-161                android:value="androidx.startup" />
-161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-162        </provider>
-163
-164        <meta-data
-164-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
-165            android:name="com.google.android.gms.version"
-165-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
-166            android:value="@integer/google_play_services_version" />
-166-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
-167
-168        <receiver
-168-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-169            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-169-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-170            android:directBootAware="false"
-170-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-171            android:enabled="true"
-171-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-172            android:exported="true"
-172-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-173            android:permission="android.permission.DUMP" >
-173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-174            <intent-filter>
-174-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-175                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-175-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-175-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-176            </intent-filter>
-177            <intent-filter>
-177-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-178                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-178-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-178-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-179            </intent-filter>
-180            <intent-filter>
-180-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-181                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-181-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-181-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-182            </intent-filter>
-183            <intent-filter>
-183-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-184                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-184-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-184-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-185            </intent-filter>
-186        </receiver>
-187    </application>
-188
-189</manifest>
+110-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
+111            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+111-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
+112            android:excludeFromRecents="true"
+112-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
+113            android:exported="true"
+113-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
+114            android:launchMode="singleTask"
+114-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
+115            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+115-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
+116            <intent-filter>
+116-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
+117                <action android:name="android.intent.action.VIEW" />
+117-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+117-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+118
+119                <category android:name="android.intent.category.DEFAULT" />
+119-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+119-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+120                <category android:name="android.intent.category.BROWSABLE" />
+120-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+120-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+121
+122                <data
+122-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+123                    android:host="firebase.auth"
+123-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+124                    android:path="/"
+124-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+125                    android:scheme="recaptcha" />
+125-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+126            </intent-filter>
+127        </activity>
+128
+129        <receiver
+129-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:29:9-40:20
+130            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+130-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:30:13-78
+131            android:exported="true"
+131-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:31:13-36
+132            android:permission="com.google.android.c2dm.permission.SEND" >
+132-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:32:13-73
+133            <intent-filter>
+133-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:33:13-35:29
+134                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+134-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:34:17-81
+134-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:34:25-78
+135            </intent-filter>
+136
+137            <meta-data
+137-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:37:13-39:40
+138                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+138-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:38:17-92
+139                android:value="true" />
+139-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:39:17-37
+140        </receiver>
+141        <!--
+142             FirebaseMessagingService performs security checks at runtime,
+143             but set to not exported to explicitly avoid allowing another app to call it.
+144        -->
+145        <service
+145-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:46:9-53:19
+146            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+146-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:47:13-82
+147            android:directBootAware="true"
+147-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:48:13-43
+148            android:exported="false" >
+148-->[com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:49:13-37
+149            <intent-filter android:priority="-500" >
+149-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:21:13-23:29
+150                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+150-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:22:17-78
+150-->C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:22:25-75
+151            </intent-filter>
+152        </service>
+153        <service
+153-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+154            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+154-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+155            android:enabled="true"
+155-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+156            android:exported="false" >
+156-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+157            <meta-data
+157-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+158                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+158-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+159                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+159-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+160        </service>
+161
+162        <activity
+162-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+163            android:name="androidx.credentials.playservices.HiddenActivity"
+163-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+164            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+164-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+165            android:enabled="true"
+165-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+166            android:exported="false"
+166-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+167            android:fitsSystemWindows="true"
+167-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+168            android:theme="@style/Theme.Hidden" >
+168-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+169        </activity>
+170        <activity
+170-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+171            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+171-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+172            android:excludeFromRecents="true"
+172-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+173            android:exported="false"
+173-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+174            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+174-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+175        <!--
+176            Service handling Google Sign-In user revocation. For apps that do not integrate with
+177            Google Sign-In, this service will never be started.
+178        -->
+179        <service
+179-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+180            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+180-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+181            android:exported="true"
+181-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+182            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+182-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+183            android:visibleToInstantApps="true" />
+183-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3e81a50dbc7087d03952e9f22bdd9f14\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+184
+185        <activity
+185-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+186            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+186-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+187            android:exported="false"
+187-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+188            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+188-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+189
+190        <provider
+190-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+191            android:name="com.google.firebase.provider.FirebaseInitProvider"
+191-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+192            android:authorities="com.example.authapp.firebaseinitprovider"
+192-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+193            android:directBootAware="true"
+193-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+194            android:exported="false"
+194-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+195            android:initOrder="100" />
+195-->[com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+196
+197        <activity
+197-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+198            android:name="androidx.compose.ui.tooling.PreviewActivity"
+198-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+199            android:exported="true" />
+199-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+200
+201        <provider
+201-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+202            android:name="androidx.startup.InitializationProvider"
+202-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+203            android:authorities="com.example.authapp.androidx-startup"
+203-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+204            android:exported="false" >
+204-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+205            <meta-data
+205-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+206                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+206-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+207                android:value="androidx.startup" />
+207-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+208            <meta-data
+208-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\41fa4b4bce6643892d6a2273bdf01897\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:29:13-31:52
+209                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+209-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\41fa4b4bce6643892d6a2273bdf01897\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:30:17-78
+210                android:value="androidx.startup" />
+210-->[androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\41fa4b4bce6643892d6a2273bdf01897\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:31:17-49
+211            <meta-data
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+212                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+212-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+213                android:value="androidx.startup" />
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+214        </provider>
+215
+216        <meta-data
+216-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+217            android:name="com.google.android.gms.version"
+217-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+218            android:value="@integer/google_play_services_version" />
+218-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+219
+220        <receiver
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+221            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+221-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+222            android:directBootAware="false"
+222-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+223            android:enabled="true"
+223-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+224            android:exported="true"
+224-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+225            android:permission="android.permission.DUMP" >
+225-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+226            <intent-filter>
+226-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+227                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+227-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+227-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+228            </intent-filter>
+229            <intent-filter>
+229-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+230                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+230-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+230-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+231            </intent-filter>
+232            <intent-filter>
+232-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+233                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+233-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+233-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+234            </intent-filter>
+235            <intent-filter>
+235-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+236                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+236-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+236-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+237            </intent-filter>
+238        </receiver>
+239
+240        <service
+240-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+241            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+241-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+242            android:exported="false" >
+242-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+243            <meta-data
+243-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+244                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+244-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+245                android:value="cct" />
+245-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+246        </service>
+247        <service
+247-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+248            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+248-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+249            android:exported="false"
+249-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+250            android:permission="android.permission.BIND_JOB_SERVICE" >
+250-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+251        </service>
+252
+253        <receiver
+253-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+254            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+254-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+255            android:exported="false" />
+255-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+256    </application>
+257
+258</manifest>

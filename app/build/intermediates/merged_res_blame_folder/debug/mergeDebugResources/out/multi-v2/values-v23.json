@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.authapp-mergeDebugResources-69:/values-v23/values-v23.xml",
+            "outputFile": "com.example.authapp-mergeDebugResources-71:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Fanil\\.gradle\\caches\\8.13\\transforms\\2526a89326c105063f449606394fa5ac\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

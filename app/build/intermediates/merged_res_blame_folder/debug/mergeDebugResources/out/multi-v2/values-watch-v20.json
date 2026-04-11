@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.authapp-mergeDebugResources-69:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.authapp-mergeDebugResources-71:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Fanil\\.gradle\\caches\\8.13\\transforms\\3e81a50dbc7087d03952e9f22bdd9f14\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",

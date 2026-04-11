@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.authapp-mergeDebugResources-69:/values-gu/values-gu.xml",
+            "outputFile": "com.example.authapp-mergeDebugResources-71:/values-gu/values-gu.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Fanil\\.gradle\\caches\\8.13\\transforms\\98d04fc442c6014566f8a6bb18ed3104\\transformed\\play-services-base-18.0.1\\res\\values-gu\\values.xml",

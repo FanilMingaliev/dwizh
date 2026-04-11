@@ -1,0 +1,102 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isSelf(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function chatDoc(chatId) {
+      return get(/databases/$(database)/documents/chats/$(chatId));
+    }
+
+    function isChatMember(chatId) {
+      return signedIn()
+        && exists(/databases/$(database)/documents/chats/$(chatId))
+        && request.auth.uid in chatDoc(chatId).data.memberIds;
+    }
+
+    function participantCountOnlyUpdate() {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['participantCount']);
+    }
+
+    function validNewEvent() {
+      let d = request.resource.data;
+      return d.date is string && d.date.size() > 0 && d.date.size() < 64
+        && d.place is string && d.place.size() < 512
+        && d.description is string && d.description.size() < 12000
+        && d.organizerId == request.auth.uid
+        && d.participantCount == 0;
+    }
+
+    match /events/{eventId} {
+      allow read: if signedIn();
+
+      allow create: if signedIn() && validNewEvent();
+
+      allow update: if signedIn() && (
+        (resource.data.organizerId == request.auth.uid
+          && request.resource.data.organizerId == resource.data.organizerId)
+        || participantCountOnlyUpdate()
+      );
+
+      allow delete: if signedIn()
+        && resource.data.organizerId == request.auth.uid;
+
+      match /registrations/{regId} {
+        allow read: if signedIn();
+        allow create: if signedIn()
+          && regId == request.auth.uid
+          && request.resource.data.userId == request.auth.uid;
+        allow update, delete: if signedIn() && regId == request.auth.uid;
+      }
+    }
+
+    match /chats/{chatId} {
+      allow read: if signedIn() && request.auth.uid in resource.data.memberIds;
+
+      allow create: if signedIn()
+        && request.auth.uid in request.resource.data.memberIds
+        && request.resource.data.memberIds is list
+        && request.resource.data.kind is string;
+
+      allow update: if signedIn()
+        && request.auth.uid in resource.data.memberIds
+        && request.auth.uid in request.resource.data.memberIds;
+    }
+
+    match /chats/{chatId}/messages/{messageId} {
+      allow read: if isChatMember(chatId);
+
+      allow create: if isChatMember(chatId)
+        && request.resource.data.senderId == request.auth.uid
+        && request.resource.data.text is string
+        && request.resource.data.text.size() > 0
+        && request.resource.data.text.size() < 4000;
+    }
+
+    match /users/{userId} {
+      allow read, write: if isSelf(userId);
+
+      match /chatList/{chatListId} {
+        allow read: if isSelf(userId);
+
+        allow create, update: if signedIn() && (
+          isSelf(userId)
+          || (
+            isChatMember(chatListId)
+            && request.resource.data.keys().hasOnly([
+              'chatId', 'eventId', 'title', 'kind', 'lastPreview', 'updatedAt'
+            ])
+          )
+        );
+
+        allow delete: if isSelf(userId);
+      }
+    }
+  }
+}

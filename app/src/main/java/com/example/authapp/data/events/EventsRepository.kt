@@ -10,6 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.stateIn
@@ -30,7 +31,9 @@ class EventsRepository(
                     id = doc.id,
                     date = doc.getString("date") ?: "",
                     place = doc.getString("place") ?: "",
-                    description = doc.getString("description") ?: ""
+                    description = doc.getString("description") ?: "",
+                    participantCount = (doc.getLong("participantCount") ?: 0L).toInt(),
+                    organizerId = doc.getString("organizerId")
                 )
             } ?: emptyList()
             trySend(items)
@@ -38,15 +41,39 @@ class EventsRepository(
         awaitClose { registration.remove() }
     }.stateIn(scope, SharingStarted.WhileSubscribed(5_000), emptyList())
 
-    suspend fun addEvent(event: Event): Result<Unit> {
+    /**
+     * Создаёт документ в `events` с авто-id Firestore.
+     * @return id нового документа (совпадает с тем, что придёт в снапшоте ленты).
+     */
+    suspend fun addEvent(event: Event): Result<String> {
         return runCatching {
+            val organizerId = auth.currentUser?.uid
+                ?: throw IllegalStateException("User is not logged in")
             val data = mapOf(
                 "date" to event.date,
                 "place" to event.place,
-                "description" to event.description
+                "description" to event.description,
+                "participantCount" to 0L,
+                "organizerId" to organizerId
             )
-            eventsCollection.document().set(data).await()
-        }.map { Unit }
+            val doc = eventsCollection.document()
+            doc.set(data).await()
+            doc.id
+        }
+    }
+
+    /** ID пользователей из `events/{eventId}/registrations`. */
+    fun registrationsUserIdsFlow(eventId: String): Flow<List<String>> = callbackFlow {
+        val listener = eventsCollection.document(eventId)
+            .collection("registrations")
+            .addSnapshotListener { snapshot, error ->
+                if (error != null) {
+                    trySend(emptyList())
+                    return@addSnapshotListener
+                }
+                trySend(snapshot?.documents?.map { it.id } ?: emptyList())
+            }
+        awaitClose { listener.remove() }
     }
 
     suspend fun registerForEvent(eventId: String): Result<Unit> {
@@ -54,15 +81,20 @@ class EventsRepository(
             ?: return Result.failure(IllegalStateException("User is not logged in"))
 
         return runCatching {
-            val registrationRef = eventsCollection.document(eventId)
-                .collection("registrations")
-                .document(uid)
-
+            val eventRef = eventsCollection.document(eventId)
+            val registrationRef = eventRef.collection("registrations").document(uid)
             val data = mapOf(
                 "userId" to uid,
                 "registeredAt" to FieldValue.serverTimestamp()
             )
-            registrationRef.set(data).await()
+            firestore.runTransaction { tx ->
+                val regSnap = tx.get(registrationRef)
+                if (regSnap.exists()) {
+                    return@runTransaction
+                }
+                tx.set(registrationRef, data)
+                tx.update(eventRef, "participantCount", FieldValue.increment(1))
+            }.await()
         }.map { Unit }
     }
 }

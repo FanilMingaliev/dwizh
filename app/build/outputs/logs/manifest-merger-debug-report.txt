@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-17:12
-INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-17:12
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:1-27:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9771a9f21812dc199f0a38725fbc8693\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\d7b94a7f0bc5b90a2d14b8daf07e2ddf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\cd35d8f337d96b22dfbff0c1a62eda7a\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -24,6 +24,8 @@ MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradl
 MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:17:1-66:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6f2c6c5c789ca9fa662dd2ff33573d02\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\7f08931d19216781b415f154064ad397\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.credentials:credentials:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\a24313712d0d4a9ffa040f7bd33b480a\transformed\credentials-1.2.0-rc01\AndroidManifest.xml:2:1-7:12
@@ -33,12 +35,14 @@ MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\User
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\eb851cb61dc03d236f1d35ffae81e2c9\transformed\play-services-fido-20.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Fanil\.gradle\caches\8.13\transforms\ba4b09cd32ebe936326df5621f0ce0ab\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c7e531635990b56ee796d996a466af7\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:15:1-41:12
 MERGED from [androidx.compose.material3:material3-android:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\06ca3bbbbecd18730933007ef6abdfac\transformed\material3-release\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.compose.material:material-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\a3176174a0222a759eda3e6190b6bee6\transformed\material-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\14b7bfed472f3186f2d2744241eecea2\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\ddf0de77d9ca352d51a6d1d8ab54b01f\transformed\material-icons-extended-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-ripple-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\df324125f676699300455408a7d3580a\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.foundation:foundation-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\61d827502fad53110359fae6e6dbcf02\transformed\foundation-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\be35bccac9ab4a966926535db8c6715a\transformed\foundation-layout-release\AndroidManifest.xml:2:1-7:12
@@ -54,6 +58,7 @@ MERGED from [androidx.compose.ui:ui-text-android:1.6.7] C:\Users\Fanil\.gradle\c
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\4809315fb0edc47c039879190b9de716\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\76244d33b2302e565ea49e788240a3ee\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\70ed842b148d14ec77190a2cb72eb15b\transformed\play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\646ccb7deb22ed22e2101bf1a4b1f65e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\ba75b6921c506563a06ff2481ff600e5\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a4a203f38c535eb5dcb52bef2a1f962\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
@@ -73,7 +78,11 @@ MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.7] C:\Users\F
 MERGED from [androidx.compose.runtime:runtime-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\d8fed577ae094aa9c1a105a25a20a595\transformed\runtime-release\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\d2e29ead6b7943a6e6b6d2b0859ba0c0\transformed\integrity-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\10973be6b1f9fd4328a35f4baa2acc67\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\3857011500e0a2e0b1422ffacdf31489\transformed\firebase-installations-interop-17.1.1\AndroidManifest.xml:15:1-19:12
 MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\77b8541abb6a89dc798d5f6d15afa32f\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9ef82fd744e048bbdef0c75880cabe93\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Fanil\.gradle\caches\8.13\transforms\8bc9689d979263a37b652e866a7b5486\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.9.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\a41a90c8ad20c6403829a2f7260d7d35\transformed\activity-1.9.0\AndroidManifest.xml:17:1-22:12
@@ -88,8 +97,8 @@ MERGED from [androidx.browser:browser:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\
 MERGED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f8eef3a0c8cf5653125ac5a4b74c017e\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\e404918833cd6d518417535b8a822729\transformed\core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\661f766e596be84a222ad94b5288c1e5\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\111670807a21b1673796f9b7a385ec78\transformed\googleid-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\661f766e596be84a222ad94b5288c1e5\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2526a89326c105063f449606394fa5ac\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7717f3e22edf2ae3487c8a3b8794d1f1\transformed\firebase-components-18.0.0\AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f0473758574bc86e1dfb23175015e973\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -97,6 +106,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fa
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\ae3d2337ed76042bd16747db2e0527cf\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\8015bfd1ee4997c54a0adb1ab0b9d62d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:15:1-31:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:15:1-37:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\68c06a5cad664ff7ca5c207cf5a34e50\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2bff510ba5b0759b147c85661750594d\transformed\transport-api-3.1.0\AndroidManifest.xml:15:1-20:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\6ae34a923b522ef65a372349671fc70c\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\ba7922f9971e1e4d8b68151f2ddac5fc\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\3c27bb5d92b456b2f0c2047a374d8663\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -113,9 +127,25 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Fan
 		INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:2:41-99
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:25:5-67
+	android:name
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:5-15:19
-INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:4:5-15:19
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:6:5-25:19
+INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:6:5-25:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9771a9f21812dc199f0a38725fbc8693\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9771a9f21812dc199f0a38725fbc8693\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\d7b94a7f0bc5b90a2d14b8daf07e2ddf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -128,6 +158,10 @@ MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:13:5-24:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:22:5-30:19
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:28:5-64:19
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:28:5-64:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6f2c6c5c789ca9fa662dd2ff33573d02\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6f2c6c5c789ca9fa662dd2ff33573d02\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:23:5-20
 MERGED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:23:5-42:19
@@ -138,6 +172,8 @@ MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\Fanil\.g
 MERGED from [com.google.android.gms:play-services-fido:20.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\eb851cb61dc03d236f1d35ffae81e2c9\transformed\play-services-fido-20.1.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:11:5-22:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:11:5-22:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c7e531635990b56ee796d996a466af7\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
@@ -146,14 +182,20 @@ MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:22:5-39:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\4a51fcd59f16379a1f74a6c56b7a1a82\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\70ed842b148d14ec77190a2cb72eb15b\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\70ed842b148d14ec77190a2cb72eb15b\transformed\play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\91fd34d9c8442422ecb2c6c9a4c3e129\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\41fa4b4bce6643892d6a2273bdf01897\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\41fa4b4bce6643892d6a2273bdf01897\transformed\lifecycle-process-2.8.2\AndroidManifest.xml:23:5-33:19
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\d2e29ead6b7943a6e6b6d2b0859ba0c0\transformed\integrity-1.2.0\AndroidManifest.xml:5:5-6:19
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\d2e29ead6b7943a6e6b6d2b0859ba0c0\transformed\integrity-1.2.0\AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\10973be6b1f9fd4328a35f4baa2acc67\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\10973be6b1f9fd4328a35f4baa2acc67\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\77b8541abb6a89dc798d5f6d15afa32f\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\77b8541abb6a89dc798d5f6d15afa32f\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9ef82fd744e048bbdef0c75880cabe93\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9ef82fd744e048bbdef0c75880cabe93\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
@@ -162,6 +204,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fa
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\3efd9d06870b546e95e38eb75f6583c8\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:21:5-29:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:21:5-29:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:25:5-39:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\6ae34a923b522ef65a372349671fc70c\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\6ae34a923b522ef65a372349671fc70c\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
@@ -169,25 +217,37 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\acf6e81b54369e90195fe6bbac1373f1\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:5:9-41
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:7:9-41
 	android:theme
-		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:6:9-45
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:8:9-45
 activity#com.example.authapp.MainActivity
-ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:7:9-14:20
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:9:9-16:20
 	android:exported
-		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:9:13-36
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:11:13-36
 	android:name
-		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:8:13-41
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:10:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:10:13-13:29
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:12:13-15:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:11:17-69
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:13:17-69
 	android:name
-		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:11:25-66
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:13:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:12:17-77
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:14:17-77
 	android:name
-		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:12:27-74
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:14:27-74
+service#com.example.authapp.fcm.DvizhFirebaseMessagingService
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:18:9-24:19
+	android:exported
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:19:13-62
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:21:13-23:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:22:17-78
+	android:name
+		ADDED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml:22:25-75
 uses-sdk
 INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Fanil\Documents\GitHub\dwizh\app\src\main\AndroidManifest.xml
@@ -232,6 +292,10 @@ MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6f2c6c5c789ca9fa662dd2ff33573d02\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-appcheck-interop:17.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6f2c6c5c789ca9fa662dd2ff33573d02\transformed\firebase-appcheck-interop-17.0.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-database-collection:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\7f08931d19216781b415f154064ad397\transformed\firebase-database-collection-18.0.1\AndroidManifest.xml:5:5-7:41
@@ -250,6 +314,8 @@ MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Fan
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] C:\Users\Fanil\.gradle\caches\8.13\transforms\ba4b09cd32ebe936326df5621f0ce0ab\transformed\play-services-auth-base-18.0.4\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7c7e531635990b56ee796d996a466af7\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
@@ -262,6 +328,8 @@ MERGED from [androidx.compose.material:material-android:1.6.7] C:\Users\Fanil\.g
 MERGED from [androidx.compose.material:material-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\a3176174a0222a759eda3e6190b6bee6\transformed\material-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\14b7bfed472f3186f2d2744241eecea2\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\14b7bfed472f3186f2d2744241eecea2\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\ddf0de77d9ca352d51a6d1d8ab54b01f\transformed\material-icons-extended-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\ddf0de77d9ca352d51a6d1d8ab54b01f\transformed\material-icons-extended-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-ripple-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\df324125f676699300455408a7d3580a\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-ripple-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\df324125f676699300455408a7d3580a\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.foundation:foundation-android:1.6.7] C:\Users\Fanil\.gradle\caches\8.13\transforms\61d827502fad53110359fae6e6dbcf02\transformed\foundation-release\AndroidManifest.xml:5:5-44
@@ -292,6 +360,8 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Fanil\.gradle\ca
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\4809315fb0edc47c039879190b9de716\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\76244d33b2302e565ea49e788240a3ee\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\76244d33b2302e565ea49e788240a3ee\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\70ed842b148d14ec77190a2cb72eb15b\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\70ed842b148d14ec77190a2cb72eb15b\transformed\play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\646ccb7deb22ed22e2101bf1a4b1f65e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\646ccb7deb22ed22e2101bf1a4b1f65e\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\ba75b6921c506563a06ff2481ff600e5\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
@@ -330,8 +400,16 @@ MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.grad
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\d2e29ead6b7943a6e6b6d2b0859ba0c0\transformed\integrity-1.2.0\AndroidManifest.xml:4:5-44
 MERGED from [com.google.android.play:integrity:1.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\d2e29ead6b7943a6e6b6d2b0859ba0c0\transformed\integrity-1.2.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\10973be6b1f9fd4328a35f4baa2acc67\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\10973be6b1f9fd4328a35f4baa2acc67\transformed\firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\3857011500e0a2e0b1422ffacdf31489\transformed\firebase-installations-interop-17.1.1\AndroidManifest.xml:17:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\3857011500e0a2e0b1422ffacdf31489\transformed\firebase-installations-interop-17.1.1\AndroidManifest.xml:17:5-44
 MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\77b8541abb6a89dc798d5f6d15afa32f\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\77b8541abb6a89dc798d5f6d15afa32f\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9ef82fd744e048bbdef0c75880cabe93\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\9ef82fd744e048bbdef0c75880cabe93\transformed\firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\319ddacc25987cd2b0b0dfc864ac5662\transformed\play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Fanil\.gradle\caches\8.13\transforms\8bc9689d979263a37b652e866a7b5486\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
@@ -360,10 +438,10 @@ MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Fan
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f8eef3a0c8cf5653125ac5a4b74c017e\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\e404918833cd6d518417535b8a822729\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\e404918833cd6d518417535b8a822729\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\661f766e596be84a222ad94b5288c1e5\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\661f766e596be84a222ad94b5288c1e5\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\111670807a21b1673796f9b7a385ec78\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\111670807a21b1673796f9b7a385ec78\transformed\googleid-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\661f766e596be84a222ad94b5288c1e5\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\661f766e596be84a222ad94b5288c1e5\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2526a89326c105063f449606394fa5ac\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2526a89326c105063f449606394fa5ac\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7717f3e22edf2ae3487c8a3b8794d1f1\transformed\firebase-components-18.0.0\AndroidManifest.xml:18:5-44
@@ -378,6 +456,16 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.g
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\8015bfd1ee4997c54a0adb1ab0b9d62d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\8015bfd1ee4997c54a0adb1ab0b9d62d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\68c06a5cad664ff7ca5c207cf5a34e50\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\68c06a5cad664ff7ca5c207cf5a34e50\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2bff510ba5b0759b147c85661750594d\transformed\transport-api-3.1.0\AndroidManifest.xml:18:5-44
+MERGED from [com.google.android.datatransport:transport-api:3.1.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\2bff510ba5b0759b147c85661750594d\transformed\transport-api-3.1.0\AndroidManifest.xml:18:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\6ae34a923b522ef65a372349671fc70c\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\6ae34a923b522ef65a372349671fc70c\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\ba7922f9971e1e4d8b68151f2ddac5fc\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
@@ -406,10 +494,18 @@ MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\83257bfce6a52cb9de2e942cdf0cca65\transformed\firebase-firestore-ktx-25.0.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:14:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:14:9-23:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:23:9-29:19
+MERGED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:23:9-29:19
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:54:9-63:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:12:9-21:19
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:12:9-21:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:30:9-38:19
 MERGED from [com.google.firebase:firebase-common:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\f20cba0303f94d091dc47c750a0b926f\transformed\firebase-common-21.0.0\AndroidManifest.xml:30:9-38:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:22:9-28:19
+MERGED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:22:9-28:19
 	android:exported
 		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:10:13-37
 	tools:targetApi
@@ -424,20 +520,22 @@ ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle
 		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1d150adb2c30f03d479acb32be4cb7b4\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:12:17-119
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:7:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:25:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:23.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\da0cbd150da2afe73c97fd28de6777e6\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\deeeca1458b7a7bc9ef244884a3d512c\transformed\recaptcha-18.4.0\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:22:5-79
 MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\61ac9a3ebbf8d17725ae075cbe82b47c\transformed\grpc-android-1.57.2\AndroidManifest.xml:7:5-79
 MERGED from [io.grpc:grpc-android:1.57.2] C:\Users\Fanil\.gradle\caches\8.13\transforms\61ac9a3ebbf8d17725ae075cbe82b47c\transformed\grpc-android-1.57.2\AndroidManifest.xml:7:5-79
 	android:name
@@ -514,6 +612,68 @@ ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradl
 		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:22:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:25.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fb23abaefcfb512c8305438a25af6892\transformed\firebase-firestore-25.0.0\AndroidManifest.xml:21:17-111
+meta-data#com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar
+ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:26:13-28:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:28:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging-ktx:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\fe0f6b826d80244a563f5fe982626f6f\transformed\firebase-messaging-ktx-24.0.0\AndroidManifest.xml:27:17-129
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:23:5-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:23:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:26:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\1478a9394b3f4895b138c8ec9c958e89\transformed\play-services-cloud-messaging-17.2.0\AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:26:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:29:9-40:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:31:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:32:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:30:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:33:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:34:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:34:25-78
+meta-data#com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:37:13-39:40
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:39:17-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:38:17-92
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:46:9-53:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:49:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:48:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:47:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:57:13-59:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:59:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:58:17-122
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:60:13-62:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:62:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:24.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\be0ddeb29338a18c828d592b35a2d23a\transformed\firebase-messaging-24.0.0\AndroidManifest.xml:61:17-119
 service#androidx.credentials.playservices.CredentialProviderMetadataHolder
 ADDED from [androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\Fanil\.gradle\caches\8.13\transforms\d3a4a866ae38d441ec24d12926eb43af\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
 	android:enabled
@@ -572,6 +732,18 @@ ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gr
 		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:18.0.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\98d04fc442c6014566f8a6bb18ed3104\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar
+ADDED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:18.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\6eac4fdc1f541b0db8af6530c4a1e9c4\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
 meta-data#com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar
 ADDED from [com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\16d6799e6ee1480c69cc3c59429a1717\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
 	android:value
@@ -702,3 +874,37 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Fanil\.gradle\caches\8.13\transforms\9366425aba8278383d1e51c276bba0e7\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.2.0] C:\Users\Fanil\.gradle\caches\8.13\transforms\7ef014b19351afb652aa9f15e8f347f8\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\5b9442400ba9d5061e666df6f763b0f2\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\Fanil\.gradle\caches\8.13\transforms\9a88fc68427de99980312e1b1996d904\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132

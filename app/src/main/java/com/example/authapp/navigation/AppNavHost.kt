@@ -2,14 +2,10 @@ package com.example.authapp.navigation
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.List
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Send
+import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -17,6 +13,10 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
+import com.example.authapp.R
+import com.example.authapp.data.chats.ChatsRepository
+import com.example.authapp.ui.theme.DvizhColors
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -33,9 +33,15 @@ import com.example.authapp.ui.auth.BirthDateScreen
 import com.example.authapp.ui.auth.GenderScreen
 import com.example.authapp.ui.auth.EmailAuthScreen
 import com.example.authapp.ui.auth.PhoneAuthScreen
+import com.example.authapp.ui.chats.ChatDetailScreen
 import com.example.authapp.ui.chats.ChatsListScreen
+import com.example.authapp.ui.chats.ChatsViewModel
+import com.example.authapp.ui.events.EventsCalendarScreen
+import com.example.authapp.ui.events.CreateEventPromotionScreen
 import com.example.authapp.ui.events.CreateEventScreen
 import com.example.authapp.ui.events.CreateEventViewModel
+import com.example.authapp.ui.events.EventDetailScreen
+import com.example.authapp.ui.events.EventParticipantsScreen
 import com.example.authapp.ui.events.EventsScreen
 import com.example.authapp.ui.events.EventsViewModel
 import com.example.authapp.ui.myevents.MyMovesScreen
@@ -70,10 +76,20 @@ object AuthRoutes {
 
 object MainRoutes {
     const val Events = "events"
+    const val EventsCalendar = "events/calendar"
     const val MyMoves = "my_moves"
     const val Chats = "chats"
+    const val ChatDetail = "chats/thread/{chatId}"
+
+    fun chatDetailRoute(chatId: String): String = "chats/thread/$chatId"
     const val Profile = "profile"
     const val CreateEvent = "events/create"
+    const val CreateEventPromotion = "events/create/promotion"
+    const val EventDetail = "event/{eventId}"
+    const val EventParticipants = "event/{eventId}/participants"
+
+    fun eventDetailRoute(eventId: String): String = "event/$eventId"
+    fun eventParticipantsRoute(eventId: String): String = "event/$eventId/participants"
     const val EditProfile = "profile/edit"
     const val AboutMe = "profile/about"
     const val FactsList = "profile/facts"
@@ -88,10 +104,13 @@ fun AppNavHost(
 ) {
     val authRepository = remember { FirebaseAuthRepository() }
     val eventsRepository = remember { EventsRepository() }
+    val chatsRepository = remember { ChatsRepository() }
     val profileRepository = remember { ProfileRepository() }
 
     val loginViewModel = remember { LoginViewModel(authRepository) }
-    val eventsViewModel = remember { EventsViewModel(eventsRepository) }
+    val eventsViewModel = remember { EventsViewModel(eventsRepository, chatsRepository) }
+    val chatsViewModel = remember { ChatsViewModel(chatsRepository) }
+    val createEventViewModel = remember { CreateEventViewModel(eventsRepository) }
     val profileViewModel = remember { ProfileViewModel(profileRepository) }
     val currentUser by authRepository.currentUser.collectAsState()
     val startDestination = if (currentUser != null) RootRoutes.Main else RootRoutes.Auth
@@ -206,24 +225,111 @@ fun AppNavHost(
             startDestination = MainRoutes.Events,
             route = RootRoutes.Main
         ) {
+            composable(MainRoutes.EventsCalendar) {
+                MainScaffold(navController = navController, showBottomBar = false) {
+                    val events by eventsViewModel.events.collectAsState()
+                    EventsCalendarScreen(
+                        events = events,
+                        onPickDate = { d ->
+                            eventsViewModel.requestFeedJumpToDate(d)
+                            navController.popBackStack()
+                        },
+                        onClose = { navController.navigateUp() }
+                    )
+                }
+            }
             composable(MainRoutes.Events) {
                 MainScaffold(navController = navController, showBottomBar = true) {
                     EventsScreen(
                         viewModel = eventsViewModel,
-                        onAddEvent = { navController.navigate(MainRoutes.CreateEvent) }
+                        onAddEvent = { navController.navigate(MainRoutes.CreateEvent) },
+                        onOpenEvent = { event ->
+                            navController.navigate(MainRoutes.eventDetailRoute(event.id))
+                        },
+                        onOpenCalendar = { navController.navigate(MainRoutes.EventsCalendar) }
+                    )
+                }
+            }
+            composable(
+                route = MainRoutes.EventParticipants,
+                arguments = listOf(navArgument("eventId") { type = NavType.StringType })
+            ) { entry ->
+                val eventId = entry.arguments?.getString("eventId") ?: return@composable
+                MainScaffold(navController = navController, showBottomBar = false) {
+                    EventParticipantsScreen(
+                        eventId = eventId,
+                        viewModel = eventsViewModel,
+                        onNavigateBack = { navController.navigateUp() }
+                    )
+                }
+            }
+            composable(
+                route = MainRoutes.EventDetail,
+                arguments = listOf(navArgument("eventId") { type = NavType.StringType })
+            ) { entry ->
+                val eventId = entry.arguments?.getString("eventId") ?: return@composable
+                MainScaffold(navController = navController, showBottomBar = false) {
+                    EventDetailScreen(
+                        eventId = eventId,
+                        viewModel = eventsViewModel,
+                        onNavigateBack = { navController.navigateUp() },
+                        onRegister = {
+                            eventsViewModel.registerForEventById(eventId)
+                        },
+                        onOpenParticipants = {
+                            navController.navigate(MainRoutes.eventParticipantsRoute(eventId))
+                        }
                     )
                 }
             }
             composable(MainRoutes.MyMoves) {
                 MainScaffold(navController = navController, showBottomBar = true) {
+                    val events by eventsViewModel.events.collectAsState()
+                    val organizerUid = currentUser
+                    val mine = remember(events, organizerUid) {
+                        if (organizerUid.isNullOrBlank()) emptyList()
+                        else events.filter { it.organizerId == organizerUid }
+                    }
                     MyMovesScreen(
-                        onCreateMove = { navController.navigate(MainRoutes.CreateEvent) }
+                        myEvents = mine,
+                        onCreateMove = {
+                            navController.navigate(MainRoutes.CreateEvent) {
+                                popUpTo(MainRoutes.Events) { saveState = true }
+                                launchSingleTop = true
+                            }
+                        },
+                        onOpenEvent = { ev ->
+                            navController.navigate(MainRoutes.eventDetailRoute(ev.id))
+                        }
+                    )
+                }
+            }
+            composable(
+                route = MainRoutes.ChatDetail,
+                arguments = listOf(navArgument("chatId") { type = NavType.StringType })
+            ) { entry ->
+                val chatId = entry.arguments?.getString("chatId") ?: return@composable
+                MainScaffold(navController = navController, showBottomBar = false) {
+                    val list by chatsViewModel.chatList.collectAsState()
+                    val title = remember(chatId, list) {
+                        list.find { it.chatId == chatId }?.title ?: "Чат"
+                    }
+                    ChatDetailScreen(
+                        chatId = chatId,
+                        title = title,
+                        viewModel = chatsViewModel,
+                        onNavigateBack = { navController.navigateUp() }
                     )
                 }
             }
             composable(MainRoutes.Chats) {
                 MainScaffold(navController = navController, showBottomBar = true) {
-                    ChatsListScreen()
+                    ChatsListScreen(
+                        viewModel = chatsViewModel,
+                        onOpenChat = { row ->
+                            navController.navigate(MainRoutes.chatDetailRoute(row.chatId))
+                        }
+                    )
                 }
             }
             composable(MainRoutes.Profile) {
@@ -279,13 +385,29 @@ fun AppNavHost(
                     )
                 }
             }
+            composable(MainRoutes.CreateEventPromotion) {
+                MainScaffold(navController = navController, showBottomBar = false) {
+                    CreateEventPromotionScreen(
+                        viewModel = createEventViewModel,
+                        onPublished = {
+                            createEventViewModel.reset()
+                            navController.popBackStack(MainRoutes.Events, inclusive = false)
+                        },
+                        onNavigateBack = { navController.navigateUp() }
+                    )
+                }
+            }
             composable(MainRoutes.CreateEvent) {
-                val createEventViewModel = remember { CreateEventViewModel(eventsRepository) }
                 MainScaffold(navController = navController, showBottomBar = false) {
                     CreateEventScreen(
                         viewModel = createEventViewModel,
-                        onSaveSuccess = { navController.popBackStack() },
-                        onCancel = { navController.popBackStack() }
+                        onContinueToPromotion = {
+                            navController.navigate(MainRoutes.CreateEventPromotion)
+                        },
+                        onCancel = {
+                            createEventViewModel.reset()
+                            navController.popBackStack()
+                        }
                     )
                 }
             }
@@ -305,9 +427,18 @@ private fun MainScaffold(
     Scaffold(
         bottomBar = {
             if (showBottomBar) {
+                val barColors = NavigationBarItemDefaults.colors(
+                    selectedIconColor = DvizhColors.Brand,
+                    selectedTextColor = DvizhColors.Brand,
+                    indicatorColor = DvizhColors.Brand.copy(alpha = 0.12f),
+                    unselectedIconColor = DvizhColors.Slate600,
+                    unselectedTextColor = DvizhColors.Slate600
+                )
                 NavigationBar {
+                    val eventsSel = currentRoute == MainRoutes.Events ||
+                        currentRoute == MainRoutes.EventsCalendar
                     NavigationBarItem(
-                        selected = currentRoute == MainRoutes.Events,
+                        selected = eventsSel,
                         onClick = {
                             navController.navigate(MainRoutes.Events) {
                                 popUpTo(MainRoutes.Events) { saveState = true }
@@ -315,11 +446,18 @@ private fun MainScaffold(
                                 restoreState = true
                             }
                         },
-                        icon = { androidx.compose.material3.Icon(Icons.Default.Home, contentDescription = "Лента") },
-                        label = { Text("Лента") }
+                        icon = {
+                            Icon(
+                                painter = painterResource(R.drawable.ic_nav_feed),
+                                contentDescription = "Лента"
+                            )
+                        },
+                        label = { Text("Лента") },
+                        colors = barColors
                     )
+                    val mySel = currentRoute == MainRoutes.MyMoves
                     NavigationBarItem(
-                        selected = currentRoute == MainRoutes.MyMoves,
+                        selected = mySel,
                         onClick = {
                             navController.navigate(MainRoutes.MyMoves) {
                                 popUpTo(MainRoutes.Events) { saveState = true }
@@ -327,22 +465,38 @@ private fun MainScaffold(
                                 restoreState = true
                             }
                         },
-                        icon = { androidx.compose.material3.Icon(Icons.Default.List, contentDescription = "Мои движы") },
-                        label = { Text("Мои") }
+                        icon = {
+                            Icon(
+                                painter = painterResource(R.drawable.ic_nav_my),
+                                contentDescription = "Мои движы"
+                            )
+                        },
+                        label = { Text("Мои") },
+                        colors = barColors
                     )
+                    val createSel = currentRoute == MainRoutes.CreateEvent ||
+                        currentRoute == MainRoutes.CreateEventPromotion
                     NavigationBarItem(
-                        selected = currentRoute == MainRoutes.CreateEvent,
+                        selected = createSel,
                         onClick = {
                             navController.navigate(MainRoutes.CreateEvent) {
                                 popUpTo(MainRoutes.Events) { saveState = true }
                                 launchSingleTop = true
                             }
                         },
-                        icon = { androidx.compose.material3.Icon(Icons.Default.Add, contentDescription = "Создать") },
-                        label = { Text("Создать") }
+                        icon = {
+                            Icon(
+                                painter = painterResource(R.drawable.ic_nav_add),
+                                contentDescription = "Создать"
+                            )
+                        },
+                        label = { Text("Создать") },
+                        colors = barColors
                     )
+                    val chatsSel = currentRoute == MainRoutes.Chats ||
+                        (currentRoute?.startsWith("chats/thread") == true)
                     NavigationBarItem(
-                        selected = currentRoute == MainRoutes.Chats,
+                        selected = chatsSel,
                         onClick = {
                             navController.navigate(MainRoutes.Chats) {
                                 popUpTo(MainRoutes.Events) { saveState = true }
@@ -350,11 +504,18 @@ private fun MainScaffold(
                                 restoreState = true
                             }
                         },
-                        icon = { androidx.compose.material3.Icon(Icons.Default.Send, contentDescription = "Чаты") },
-                        label = { Text("Чаты") }
+                        icon = {
+                            Icon(
+                                painter = painterResource(R.drawable.ic_nav_chats),
+                                contentDescription = "Чаты"
+                            )
+                        },
+                        label = { Text("Чаты") },
+                        colors = barColors
                     )
+                    val profileSel = currentRoute == MainRoutes.Profile
                     NavigationBarItem(
-                        selected = currentRoute == MainRoutes.Profile,
+                        selected = profileSel,
                         onClick = {
                             navController.navigate(MainRoutes.Profile) {
                                 popUpTo(MainRoutes.Events) { saveState = true }
@@ -362,8 +523,14 @@ private fun MainScaffold(
                                 restoreState = true
                             }
                         },
-                        icon = { androidx.compose.material3.Icon(Icons.Default.Person, contentDescription = "Профиль") },
-                        label = { Text("Профиль") }
+                        icon = {
+                            Icon(
+                                painter = painterResource(R.drawable.ic_nav_profile),
+                                contentDescription = "Профиль"
+                            )
+                        },
+                        label = { Text("Профиль") },
+                        colors = barColors
                     )
                 }
             }

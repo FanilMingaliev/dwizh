@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.authapp-mergeDebugResources-69:/values-bs/values-bs.xml",
+            "outputFile": "com.example.authapp-mergeDebugResources-71:/values-bs/values-bs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Fanil\\.gradle\\caches\\8.13\\transforms\\61d827502fad53110359fae6e6dbcf02\\transformed\\foundation-release\\res\\values-bs\\values-bs.xml",

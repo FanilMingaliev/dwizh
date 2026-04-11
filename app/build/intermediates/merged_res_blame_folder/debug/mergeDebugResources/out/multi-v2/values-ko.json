@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.authapp-mergeDebugResources-69:/values-ko/values-ko.xml",
+            "outputFile": "com.example.authapp-mergeDebugResources-71:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Fanil\\.gradle\\caches\\8.13\\transforms\\acf6e81b54369e90195fe6bbac1373f1\\transformed\\core-1.13.1\\res\\values-ko\\values-ko.xml",
