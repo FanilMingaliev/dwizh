@@ -1,6 +1,8 @@
 ---
 description: "Android Agent Discovery & Implementation Guidelines (Desquared)"
-globs: "**/*.kt,**/*.kts"
+globs:
+  - "**/*.kt"
+  - "**/*.kts"
 alwaysApply: false
 ---
 

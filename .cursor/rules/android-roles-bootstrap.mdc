@@ -1,0 +1,33 @@
+---
+description: "Android roles bootstrap for every chat"
+alwaysApply: true
+---
+
+# Android Roles Bootstrap
+
+Apply this rule at the start of every Android task in this repository.
+
+## Role activation
+
+- Use architecture first, then domain specialists (UI, networking, data), then QA/security/accessibility checks.
+- Run independent specialist tasks in parallel when possible.
+- Ask for clarification before adding new dependencies or changing established project patterns.
+
+## Source role files
+
+Use the existing role rules in `.cursor/rules/` as detailed role definitions:
+
+- `android-agent-orchestration.mdc`
+- `android-project-arch.mdc`
+- `android-ux-ui-design-agent.mdc`
+- `android-concurrency-networking-agent.mdc`
+- `android-persistence-specialist.mdc`
+- `android-testing-qa-agent.mdc`
+- `android-security-reviewer.mdc`
+- `android-accessibility-specialist.mdc`
+- `android-performance-optimizer.mdc`
+
+## Matching existing stack
+
+- Detect and follow existing architecture and libraries before implementation.
+- Prefer consistency with the current codebase over introducing new approaches.

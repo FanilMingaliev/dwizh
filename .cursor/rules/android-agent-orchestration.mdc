@@ -1,6 +1,8 @@
 ---
 description: "Agent Orchestration (Desquared)"
-globs: "**/*.kt,**/*.kts"
+globs:
+  - "**/*.kt"
+  - "**/*.kts"
 alwaysApply: false
 ---
 

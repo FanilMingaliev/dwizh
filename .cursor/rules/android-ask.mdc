@@ -1,6 +1,8 @@
 ---
 description: "Third-Party Libraries (Desquared)"
-globs: "**/*.kt,**/*.kts"
+globs:
+  - "**/*.kt"
+  - "**/*.kts"
 alwaysApply: false
 ---
 
