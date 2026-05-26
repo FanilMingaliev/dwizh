@@ -23,7 +23,12 @@ class FirebaseAuthRepository(
 
     override suspend fun login(email: String, password: String): Result<Unit> {
         return runCatching {
-            auth.signInWithEmailAndPassword(email, password).await()
+            val authResult = auth.signInWithEmailAndPassword(email, password).await()
+            val user = authResult.user ?: throw IllegalStateException("Не удалось получить профиль пользователя")
+            if (!user.isEmailVerified) {
+                auth.signOut()
+                throw IllegalStateException("Подтвердите email и повторите вход")
+            }
         }.map { Unit }
     }
 

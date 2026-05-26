@@ -24,6 +24,64 @@ service cloud.firestore {
       return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['participantCount']);
     }
 
+    function registrationDocPath(eventId, uid) {
+      return /databases/$(database)/documents/events/$(eventId)/registrations/$(uid);
+    }
+
+    function participantCountViaRegistrationTxn(eventId) {
+      let beforeCount = resource.data.participantCount;
+      let afterCount = request.resource.data.participantCount;
+      let regPath = registrationDocPath(eventId, request.auth.uid);
+
+      return afterCount is int
+        && afterCount >= 0
+        && (
+          (
+            afterCount == beforeCount + 1
+            && !exists(regPath)
+            && existsAfter(regPath)
+          )
+          || (
+            afterCount == beforeCount - 1
+            && exists(regPath)
+            && !existsAfter(regPath)
+          )
+        );
+    }
+
+    function chatMetadataOnlyUpdate() {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+        'title', 'lastPreview', 'updatedAt'
+      ]);
+    }
+
+    function validMemberListForCreate() {
+      return request.resource.data.memberIds is list
+        && request.resource.data.memberIds.size() >= 2
+        && request.resource.data.memberIds.size() <= 100
+        && request.auth.uid in request.resource.data.memberIds;
+    }
+
+    function memberAddOnlyUpdate() {
+      let beforeMembers = resource.data.memberIds;
+      let afterMembers = request.resource.data.memberIds;
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'memberIds', 'updatedAt'
+        ])
+        && beforeMembers is list
+        && afterMembers is list
+        && request.auth.uid in beforeMembers
+        && request.auth.uid in afterMembers
+        && afterMembers.size() == beforeMembers.size() + 1
+        && afterMembers.hasAll(beforeMembers);
+    }
+
+    function canEditOwnMessageShortWindow() {
+      return signedIn()
+        && resource.data.senderId == request.auth.uid
+        && request.time < resource.data.createdAt + duration.value(10, 'm');
+    }
+
     function validNewEvent() {
       let d = request.resource.data;
       return d.date is string && d.date.size() > 0 && d.date.size() < 64
@@ -41,7 +99,10 @@ service cloud.firestore {
       allow update: if signedIn() && (
         (resource.data.organizerId == request.auth.uid
           && request.resource.data.organizerId == resource.data.organizerId)
-        || participantCountOnlyUpdate()
+        || (
+          participantCountOnlyUpdate()
+          && participantCountViaRegistrationTxn(eventId)
+        )
       );
 
       allow delete: if signedIn()
@@ -60,13 +121,17 @@ service cloud.firestore {
       allow read: if signedIn() && request.auth.uid in resource.data.memberIds;
 
       allow create: if signedIn()
-        && request.auth.uid in request.resource.data.memberIds
-        && request.resource.data.memberIds is list
+        && validMemberListForCreate()
         && request.resource.data.kind is string;
 
       allow update: if signedIn()
-        && request.auth.uid in resource.data.memberIds
-        && request.auth.uid in request.resource.data.memberIds;
+        && (
+          (
+            request.auth.uid in resource.data.memberIds
+            && chatMetadataOnlyUpdate()
+          )
+          || memberAddOnlyUpdate()
+        );
     }
 
     match /chats/{chatId}/messages/{messageId} {
@@ -76,7 +141,18 @@ service cloud.firestore {
         && request.resource.data.senderId == request.auth.uid
         && request.resource.data.text is string
         && request.resource.data.text.size() > 0
+        && request.resource.data.text.size() < 4000
+        && request.resource.data.keys().hasOnly(['senderId', 'text', 'createdAt']);
+
+      allow update: if canEditOwnMessageShortWindow()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['text'])
+        && request.resource.data.senderId == resource.data.senderId
+        && request.resource.data.createdAt == resource.data.createdAt
+        && request.resource.data.text is string
+        && request.resource.data.text.size() > 0
         && request.resource.data.text.size() < 4000;
+
+      allow delete: if canEditOwnMessageShortWindow();
     }
 
     match /users/{userId} {

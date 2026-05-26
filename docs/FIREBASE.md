@@ -35,3 +35,32 @@
 ## Если что-то отклоняется правилами
 
 Откройте Firebase Console → Firestore → Rules → вкладка **Rules playground**, воспроизведите путь и операцию. Частые причины: не выполнен вход, у старого события нет `organizerId` (удаление только у организатора с совпадающим полем), индекс для `messages` ещё не построен.
+
+## App Check (обязательно для production)
+
+В приложении включена инициализация App Check:
+
+- `debug` сборка: `DebugAppCheckProviderFactory` (для локальной разработки).
+- `release` сборка: `PlayIntegrityAppCheckProviderFactory`.
+
+### Что включить в Firebase Console
+
+1. Firebase Console → **Build** → **App Check**.
+2. Выберите Android-приложение `com.example.authapp`.
+3. Провайдер: **Play Integrity**.
+4. Для Firestore/Auth/Storage постепенно переключите из **Monitor** в **Enforce** после проверки клиентских запросов.
+5. Для debug-режима добавьте debug token (из логов приложения) в App Check → Debug tokens.
+
+## Ограничения API-ключа в GCP
+
+Ключ из `app/google-services.json` не секрет, но должен быть жёстко ограничен.
+
+1. Google Cloud Console → **APIs & Services** → **Credentials**.
+2. Откройте ключ Android-приложения Firebase.
+3. В **Application restrictions** выберите **Android apps**.
+4. Добавьте пакет и SHA-1/SHA-256 для всех используемых сертификатов:
+   - debug keystore
+   - release keystore
+   - Play App Signing certificate (если публикуетесь через Google Play)
+5. В **API restrictions** разрешите только нужные Firebase API для этого клиента.
+6. Убедитесь, что нет unrestricted duplicate-ключей для того же проекта.
